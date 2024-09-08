@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		553F2BF42C8D683B00483ABA /* ZotMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2BF32C8D683B00483ABA /* ZotMapApp.swift */; };
+		553F2BF62C8D683B00483ABA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2BF52C8D683B00483ABA /* ContentView.swift */; };
+		553F2BF82C8D683B00483ABA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2BF72C8D683B00483ABA /* Item.swift */; };
+		553F2BFD2C8D683C00483ABA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553F2BFC2C8D683C00483ABA /* Preview Assets.xcassets */; };
+		553F2C072C8D683C00483ABA /* ZotMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C062C8D683C00483ABA /* ZotMapTests.swift */; };
+		553F2C112C8D683C00483ABA /* ZotMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C102C8D683C00483ABA /* ZotMapUITests.swift */; };
+		553F2C132C8D683C00483ABA /* ZotMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C122C8D683C00483ABA /* ZotMapUITestsLaunchTests.swift */; };
+		553F2C202C8D6A1E00483ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553F2C1F2C8D6A1E00483ABA /* Assets.xcassets */; };
+		553F2C252C8D6B3700483ABA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C242C8D6B3700483ABA /* Location.swift */; };
+		553F2C282C8D6CA100483ABA /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C272C8D6CA100483ABA /* LocationsDataService.swift */; };
+		553F2C2A2C8D6D6800483ABA /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C292C8D6D6800483ABA /* LocationView.swift */; };
+		553F2C2C2C8D6D8C00483ABA /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C2B2C8D6D8C00483ABA /* LocationViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		553F2C032C8D683C00483ABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553F2BE82C8D683B00483ABA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553F2BEF2C8D683B00483ABA;
+			remoteInfo = ZotMap;
+		};
+		553F2C0D2C8D683C00483ABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553F2BE82C8D683B00483ABA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553F2BEF2C8D683B00483ABA;
+			remoteInfo = ZotMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		553F2BF02C8D683B00483ABA /* ZotMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZotMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		553F2BF32C8D683B00483ABA /* ZotMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZotMapApp.swift; sourceTree = "<group>"; };
+		553F2BF52C8D683B00483ABA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		553F2BF72C8D683B00483ABA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		553F2BFC2C8D683C00483ABA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		553F2C022C8D683C00483ABA /* ZotMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZotMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553F2C062C8D683C00483ABA /* ZotMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZotMapTests.swift; sourceTree = "<group>"; };
+		553F2C0C2C8D683C00483ABA /* ZotMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZotMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553F2C102C8D683C00483ABA /* ZotMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZotMapUITests.swift; sourceTree = "<group>"; };
+		553F2C122C8D683C00483ABA /* ZotMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZotMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		553F2C1F2C8D6A1E00483ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		553F2C242C8D6B3700483ABA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		553F2C272C8D6CA100483ABA /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		553F2C292C8D6D6800483ABA /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		553F2C2B2C8D6D8C00483ABA /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		553F2BED2C8D683B00483ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F2BFF2C8D683C00483ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F2C092C8D683C00483ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		553F2BE72C8D683B00483ABA = {
+			isa = PBXGroup;
+			children = (
+				553F2BF22C8D683B00483ABA /* ZotMap */,
+				553F2C052C8D683C00483ABA /* ZotMapTests */,
+				553F2C0F2C8D683C00483ABA /* ZotMapUITests */,
+				553F2BF12C8D683B00483ABA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		553F2BF12C8D683B00483ABA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				553F2BF02C8D683B00483ABA /* ZotMap.app */,
+				553F2C022C8D683C00483ABA /* ZotMapTests.xctest */,
+				553F2C0C2C8D683C00483ABA /* ZotMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		553F2BF22C8D683B00483ABA /* ZotMap */ = {
+			isa = PBXGroup;
+			children = (
+				553F2BF32C8D683B00483ABA /* ZotMapApp.swift */,
+				553F2BF52C8D683B00483ABA /* ContentView.swift */,
+				553F2BF72C8D683B00483ABA /* Item.swift */,
+				553F2C262C8D6C6400483ABA /* DataServices */,
+				553F2C222C8D6AC600483ABA /* Views */,
+				553F2C232C8D6ACD00483ABA /* ViewModels */,
+				553F2C212C8D6AC200483ABA /* Models */,
+				553F2BFB2C8D683C00483ABA /* Preview Content */,
+			);
+			path = ZotMap;
+			sourceTree = "<group>";
+		};
+		553F2BFB2C8D683C00483ABA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				553F2C1F2C8D6A1E00483ABA /* Assets.xcassets */,
+				553F2BFC2C8D683C00483ABA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		553F2C052C8D683C00483ABA /* ZotMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				553F2C062C8D683C00483ABA /* ZotMapTests.swift */,
+			);
+			path = ZotMapTests;
+			sourceTree = "<group>";
+		};
+		553F2C0F2C8D683C00483ABA /* ZotMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				553F2C102C8D683C00483ABA /* ZotMapUITests.swift */,
+				553F2C122C8D683C00483ABA /* ZotMapUITestsLaunchTests.swift */,
+			);
+			path = ZotMapUITests;
+			sourceTree = "<group>";
+		};
+		553F2C212C8D6AC200483ABA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				553F2C242C8D6B3700483ABA /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		553F2C222C8D6AC600483ABA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				553F2C292C8D6D6800483ABA /* LocationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		553F2C232C8D6ACD00483ABA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				553F2C2B2C8D6D8C00483ABA /* LocationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		553F2C262C8D6C6400483ABA /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				553F2C272C8D6CA100483ABA /* LocationsDataService.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		553F2BEF2C8D683B00483ABA /* ZotMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553F2C162C8D683C00483ABA /* Build configuration list for PBXNativeTarget "ZotMap" */;
+			buildPhases = (
+				553F2BEC2C8D683B00483ABA /* Sources */,
+				553F2BED2C8D683B00483ABA /* Frameworks */,
+				553F2BEE2C8D683B00483ABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZotMap;
+			productName = ZotMap;
+			productReference = 553F2BF02C8D683B00483ABA /* ZotMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		553F2C012C8D683C00483ABA /* ZotMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553F2C192C8D683C00483ABA /* Build configuration list for PBXNativeTarget "ZotMapTests" */;
+			buildPhases = (
+				553F2BFE2C8D683C00483ABA /* Sources */,
+				553F2BFF2C8D683C00483ABA /* Frameworks */,
+				553F2C002C8D683C00483ABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553F2C042C8D683C00483ABA /* PBXTargetDependency */,
+			);
+			name = ZotMapTests;
+			productName = ZotMapTests;
+			productReference = 553F2C022C8D683C00483ABA /* ZotMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		553F2C0B2C8D683C00483ABA /* ZotMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553F2C1C2C8D683C00483ABA /* Build configuration list for PBXNativeTarget "ZotMapUITests" */;
+			buildPhases = (
+				553F2C082C8D683C00483ABA /* Sources */,
+				553F2C092C8D683C00483ABA /* Frameworks */,
+				553F2C0A2C8D683C00483ABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553F2C0E2C8D683C00483ABA /* PBXTargetDependency */,
+			);
+			name = ZotMapUITests;
+			productName = ZotMapUITests;
+			productReference = 553F2C0C2C8D683C00483ABA /* ZotMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		553F2BE82C8D683B00483ABA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					553F2BEF2C8D683B00483ABA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					553F2C012C8D683C00483ABA = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 553F2BEF2C8D683B00483ABA;
+					};
+					553F2C0B2C8D683C00483ABA = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 553F2BEF2C8D683B00483ABA;
+					};
+				};
+			};
+			buildConfigurationList = 553F2BEB2C8D683B00483ABA /* Build configuration list for PBXProject "ZotMap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 553F2BE72C8D683B00483ABA;
+			productRefGroup = 553F2BF12C8D683B00483ABA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				553F2BEF2C8D683B00483ABA /* ZotMap */,
+				553F2C012C8D683C00483ABA /* ZotMapTests */,
+				553F2C0B2C8D683C00483ABA /* ZotMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		553F2BEE2C8D683B00483ABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F2C202C8D6A1E00483ABA /* Assets.xcassets in Resources */,
+				553F2BFD2C8D683C00483ABA /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F2C002C8D683C00483ABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F2C0A2C8D683C00483ABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		553F2BEC2C8D683B00483ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F2BF62C8D683B00483ABA /* ContentView.swift in Sources */,
+				553F2C2A2C8D6D6800483ABA /* LocationView.swift in Sources */,
+				553F2BF82C8D683B00483ABA /* Item.swift in Sources */,
+				553F2C252C8D6B3700483ABA /* Location.swift in Sources */,
+				553F2C2C2C8D6D8C00483ABA /* LocationViewModel.swift in Sources */,
+				553F2BF42C8D683B00483ABA /* ZotMapApp.swift in Sources */,
+				553F2C282C8D6CA100483ABA /* LocationsDataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F2BFE2C8D683C00483ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F2C072C8D683C00483ABA /* ZotMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F2C082C8D683C00483ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F2C112C8D683C00483ABA /* ZotMapUITests.swift in Sources */,
+				553F2C132C8D683C00483ABA /* ZotMapUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		553F2C042C8D683C00483ABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553F2BEF2C8D683B00483ABA /* ZotMap */;
+			targetProxy = 553F2C032C8D683C00483ABA /* PBXContainerItemProxy */;
+		};
+		553F2C0E2C8D683C00483ABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553F2BEF2C8D683B00483ABA /* ZotMap */;
+			targetProxy = 553F2C0D2C8D683C00483ABA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		553F2C142C8D683C00483ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		553F2C152C8D683C00483ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		553F2C172C8D683C00483ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZotMap/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4GZ52K957;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waterkimchi.ZotMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		553F2C182C8D683C00483ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZotMap/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4GZ52K957;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waterkimchi.ZotMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		553F2C1A2C8D683C00483ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4GZ52K957;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waterkimchi.ZotMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZotMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZotMap";
+			};
+			name = Debug;
+		};
+		553F2C1B2C8D683C00483ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4GZ52K957;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waterkimchi.ZotMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZotMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZotMap";
+			};
+			name = Release;
+		};
+		553F2C1D2C8D683C00483ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4GZ52K957;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waterkimchi.ZotMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZotMap;
+			};
+			name = Debug;
+		};
+		553F2C1E2C8D683C00483ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4GZ52K957;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waterkimchi.ZotMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZotMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		553F2BEB2C8D683B00483ABA /* Build configuration list for PBXProject "ZotMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F2C142C8D683C00483ABA /* Debug */,
+				553F2C152C8D683C00483ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553F2C162C8D683C00483ABA /* Build configuration list for PBXNativeTarget "ZotMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F2C172C8D683C00483ABA /* Debug */,
+				553F2C182C8D683C00483ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553F2C192C8D683C00483ABA /* Build configuration list for PBXNativeTarget "ZotMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F2C1A2C8D683C00483ABA /* Debug */,
+				553F2C1B2C8D683C00483ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553F2C1C2C8D683C00483ABA /* Build configuration list for PBXNativeTarget "ZotMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F2C1D2C8D683C00483ABA /* Debug */,
+				553F2C1E2C8D683C00483ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 553F2BE82C8D683B00483ABA /* Project object */;
+}
