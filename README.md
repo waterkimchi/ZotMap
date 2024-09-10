@@ -1,4 +1,4 @@
-ZotMap
+# ZotMap
 
 iOS native app to view and access the University of California, Irvine campus map on your phone. 
 
