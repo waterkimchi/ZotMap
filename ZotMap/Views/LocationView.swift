@@ -19,10 +19,16 @@ struct LocationView: View {
             Map(position: $vm.mapCamera)
                 .mapStyle(mapStyleSelect)
                 .ignoresSafeArea()
+                .zIndex(1)
             VStack(spacing: 0) {
                 header
                     .padding()
                 Spacer()
+            }
+            .zIndex(2)
+            if vm.showLocationList {
+                SlideMenuView()
+                    .zIndex(3)
             }
         }
     }
@@ -35,29 +41,15 @@ struct LocationView: View {
 
 extension LocationView {
     private var header: some View {
-        HStack {
-            Spacer()
-            Menu {
-                Button {
-                } label: {
-                    Label("New Album", systemImage: "rectangle.stack.badge.plus")
-                }
-                Button {
-                } label: {
-                    Label("New Folder", systemImage: "folder.badge.plus")
-                }
-                Button {
-                } label: {
-                    Label("New Shared Album", systemImage: "rectangle.stack.badge.person.crop")
-                }
-            } label: {
-                Image(systemName: "line.3.horizontal")
-                    .frame(height: 50)
-                    .frame(maxWidth: 50)
+        ZStack {
+            HStack {
+                Spacer()
+                MenuButtonView()
             }
-            .background(.thickMaterial)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 15)
+            HStack {
+                SearchButtonView()
+                Spacer()
+            }
         }
     }
 }

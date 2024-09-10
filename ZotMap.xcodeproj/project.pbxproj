@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551BA24C2C8FA867001713B7 /* SearchButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551BA24B2C8FA867001713B7 /* SearchButtonView.swift */; };
+		551BA24E2C8FB240001713B7 /* SlideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551BA24D2C8FB240001713B7 /* SlideMenuView.swift */; };
 		553F2BF42C8D683B00483ABA /* ZotMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2BF32C8D683B00483ABA /* ZotMapApp.swift */; };
 		553F2BF62C8D683B00483ABA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2BF52C8D683B00483ABA /* ContentView.swift */; };
 		553F2BF82C8D683B00483ABA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2BF72C8D683B00483ABA /* Item.swift */; };
@@ -19,6 +21,8 @@
 		553F2C282C8D6CA100483ABA /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C272C8D6CA100483ABA /* LocationsDataService.swift */; };
 		553F2C2A2C8D6D6800483ABA /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C292C8D6D6800483ABA /* LocationView.swift */; };
 		553F2C2C2C8D6D8C00483ABA /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C2B2C8D6D8C00483ABA /* LocationViewModel.swift */; };
+		553F2C2F2C8E51C200483ABA /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C2E2C8E51C200483ABA /* MenuButtonView.swift */; };
+		55F06C502C8FE9D3001DF4BC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F06C4F2C8FE9D3001DF4BC /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		551BA24B2C8FA867001713B7 /* SearchButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButtonView.swift; sourceTree = "<group>"; };
+		551BA24D2C8FB240001713B7 /* SlideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuView.swift; sourceTree = "<group>"; };
 		553F2BF02C8D683B00483ABA /* ZotMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZotMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		553F2BF32C8D683B00483ABA /* ZotMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZotMapApp.swift; sourceTree = "<group>"; };
 		553F2BF52C8D683B00483ABA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,8 @@
 		553F2C272C8D6CA100483ABA /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		553F2C292C8D6D6800483ABA /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		553F2C2B2C8D6D8C00483ABA /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		553F2C2E2C8E51C200483ABA /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
+		55F06C4F2C8FE9D3001DF4BC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +89,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		551BA24F2C8FB6AD001713B7 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				551BA24B2C8FA867001713B7 /* SearchButtonView.swift */,
+				551BA24D2C8FB240001713B7 /* SlideMenuView.swift */,
+			);
+			path = SlideMenu;
+			sourceTree = "<group>";
+		};
 		553F2BE72C8D683B00483ABA = {
 			isa = PBXGroup;
 			children = (
+				55F06C4F2C8FE9D3001DF4BC /* Launch Screen.storyboard */,
 				553F2BF22C8D683B00483ABA /* ZotMap */,
 				553F2C052C8D683C00483ABA /* ZotMapTests */,
 				553F2C0F2C8D683C00483ABA /* ZotMapUITests */,
@@ -154,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				553F2C292C8D6D6800483ABA /* LocationView.swift */,
+				553F2C2E2C8E51C200483ABA /* MenuButtonView.swift */,
+				551BA24F2C8FB6AD001713B7 /* SlideMenu */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F06C502C8FE9D3001DF4BC /* Launch Screen.storyboard in Resources */,
 				553F2C202C8D6A1E00483ABA /* Assets.xcassets in Resources */,
 				553F2BFD2C8D683C00483ABA /* Preview Assets.xcassets in Resources */,
 			);
@@ -305,10 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				553F2BF62C8D683B00483ABA /* ContentView.swift in Sources */,
+				553F2C2F2C8E51C200483ABA /* MenuButtonView.swift in Sources */,
 				553F2C2A2C8D6D6800483ABA /* LocationView.swift in Sources */,
 				553F2BF82C8D683B00483ABA /* Item.swift in Sources */,
 				553F2C252C8D6B3700483ABA /* Location.swift in Sources */,
 				553F2C2C2C8D6D8C00483ABA /* LocationViewModel.swift in Sources */,
+				551BA24C2C8FA867001713B7 /* SearchButtonView.swift in Sources */,
+				551BA24E2C8FB240001713B7 /* SlideMenuView.swift in Sources */,
 				553F2BF42C8D683B00483ABA /* ZotMapApp.swift in Sources */,
 				553F2C282C8D6CA100483ABA /* LocationsDataService.swift in Sources */,
 			);
@@ -477,9 +501,11 @@
 				DEVELOPMENT_TEAM = Q4GZ52K957;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZotMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,9 +532,11 @@
 				DEVELOPMENT_TEAM = Q4GZ52K957;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZotMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

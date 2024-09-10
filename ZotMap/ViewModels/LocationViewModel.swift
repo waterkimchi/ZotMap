@@ -14,17 +14,22 @@ class LocationViewModel: ObservableObject {
     // All loaded locations
     @Published var locations: [Location]
     
-    // Current lcoation on map
+    // Current location on map
     @Published var mapLocation: Location {
         didSet {
             updateMapRegion(location: mapLocation)
         }
     }
-    
+   
+    // Curent region on map
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
-    
+   
+    // camera position of current map region
     @Published var mapCamera: MapCameraPosition = .automatic
+    
+    
+    @Published var showLocationList: Bool = false
     
     init() {
         let locations = LocationsDataService.locations
@@ -41,6 +46,12 @@ class LocationViewModel: ObservableObject {
                 center: location.coordinates,
                 span: mapSpan)
             mapCamera = .region(mapRegion)
+        }
+    }
+    
+    public func toggleLocationList() {
+        withAnimation(.easeInOut) {
+            showLocationList.toggle()
         }
     }
 }
