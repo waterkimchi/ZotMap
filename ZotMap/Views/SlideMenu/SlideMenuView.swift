@@ -13,18 +13,9 @@ struct SlideMenuView: View {
     
     var body: some View {
         ZStack {
-            Rectangle()
-                .opacity(0.3)
-                .ignoresSafeArea()
-                .onTapGesture {
-                    vm.toggleLocationList()
-                }
-                .zIndex(1)
-            
             HStack {
                 VStack(alignment: .leading, spacing: 32) {
-                    Text("Side Bar")
-                        .foregroundStyle(.white)
+                    header
                     Spacer()
                 }
                 .padding()
@@ -42,4 +33,28 @@ struct SlideMenuView: View {
 #Preview {
     SlideMenuView()
         .environmentObject(LocationViewModel())
+}
+
+extension SlideMenuView {
+    private var header: some View {
+        ZStack {
+            Rectangle()
+                .frame(width: 190, height: 70)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .opacity(0.5)
+                .padding()
+            HStack {
+                Image("Logo2")
+                    .resizable()
+                    .imageScale(.large)
+                    .frame(width: 48, height: 48)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .padding(.vertical)
+                Image("TextLogo")
+                    .resizable()
+                    .imageScale(.large)
+                    .frame(width: 120, height: 130)
+            }
+        }
+    }
 }

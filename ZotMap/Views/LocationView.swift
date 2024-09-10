@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 struct LocationView: View {
-   
+    
     @EnvironmentObject private var vm: LocationViewModel
     
     @State private var mapStyleSelect: MapStyle = .standard
@@ -27,8 +27,12 @@ struct LocationView: View {
             }
             .zIndex(2)
             if vm.showLocationList {
-                SlideMenuView()
+               dimSquare
                     .zIndex(3)
+            }
+            if vm.showLocationList {
+                SlideMenuView()
+                    .zIndex(4)
             }
         }
     }
@@ -51,5 +55,14 @@ extension LocationView {
                 Spacer()
             }
         }
+    }
+    
+    private var dimSquare: some View {
+        Rectangle()
+            .opacity(0.3)
+            .ignoresSafeArea()
+            .onTapGesture {
+                vm.toggleLocationList()
+            }
     }
 }
