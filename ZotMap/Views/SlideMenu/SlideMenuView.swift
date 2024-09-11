@@ -11,12 +11,16 @@ struct SlideMenuView: View {
     
     @EnvironmentObject private var vm: LocationViewModel
     
+    @State private var searchText: String = ""
+    @State private var showCancelButton: Bool = false
+    
     
     var body: some View {
         ZStack {
             HStack {
                 VStack(alignment: .leading) {
                     header
+                    searchBar
                     locationList
                     Spacer()
                 }
@@ -55,8 +59,8 @@ extension SlideMenuView {
                     .padding(.vertical)
                 Image("TextLogo")
                     .resizable()
-                    .imageScale(.large)
-                    .frame(width: 120, height: 130)
+                    .scaledToFill()
+                    .frame(width: 120, height: 80)
             }
         }
     }
@@ -86,5 +90,26 @@ extension SlideMenuView {
             }
         }
         .listStyle(.plain)
+    }
+    
+    private var searchBar: some View {
+        ZStack {
+            HStack {
+                Spacer(minLength: 15)
+                RoundedRectangle(cornerRadius: 10)
+                    .frame(height: 35)
+                    .foregroundStyle(.black)
+                    .opacity(0.2)
+                Spacer(minLength: 50)
+            }
+            
+            HStack {
+                Spacer(minLength: 25)
+                TextField("", text: $searchText, prompt: Text("search").foregroundStyle(.gray))
+                .foregroundStyle(.white)
+                Spacer(minLength: 55)
+            }
+        }
+        
     }
 }
