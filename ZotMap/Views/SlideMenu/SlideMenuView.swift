@@ -17,6 +17,7 @@ struct SlideMenuView: View {
             HStack {
                 VStack(alignment: .leading) {
                     header
+                    locationList
                     Spacer()
                 }
                 .padding()
@@ -43,6 +44,7 @@ extension SlideMenuView {
                 .frame(width: Constants().slideHeaderSquareWidth, height: Constants().slideHeaderSquareHeight)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .opacity(0.5)
+                .shadow(radius: 10)
                 .padding()
             HStack {
                 Image("Logo2")
@@ -57,5 +59,32 @@ extension SlideMenuView {
                     .frame(width: 120, height: 130)
             }
         }
+    }
+    
+    private var locationList: some View {
+        List {
+            ForEach(vm.locations) { locations in
+                HStack {
+                    if let imageName = locations.imageNames.first {
+                        Image(imageName)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 45, height: 45)
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                    }
+                    
+                    VStack(alignment: .leading) {
+                        Text(locations.name)
+                            .font(.custom("Montserrat-Medium", size: 20))
+                            .foregroundStyle(.accentYellow)
+                        Text(locations.cityName)
+                            .font(.subheadline)
+                            .foregroundStyle(.black)
+                    }
+                }
+                .listRowBackground(Color.accentBlue)
+            }
+        }
+        .listStyle(.plain)
     }
 }
