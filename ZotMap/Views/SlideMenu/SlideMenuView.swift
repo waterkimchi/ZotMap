@@ -11,15 +11,16 @@ struct SlideMenuView: View {
     
     @EnvironmentObject private var vm: LocationViewModel
     
+    
     var body: some View {
         ZStack {
             HStack {
-                VStack(alignment: .leading, spacing: 32) {
+                VStack(alignment: .leading) {
                     header
                     Spacer()
                 }
                 .padding()
-                .frame(width: 270, alignment: .leading)
+                .frame(width: Constants().slideMenuWidth, alignment: .leading)
                 .background(.accentBlue)
                 
                 Spacer()
@@ -39,7 +40,7 @@ extension SlideMenuView {
     private var header: some View {
         ZStack {
             Rectangle()
-                .frame(width: 190, height: 70)
+                .frame(width: Constants().slideHeaderSquareWidth, height: Constants().slideHeaderSquareHeight)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .opacity(0.5)
                 .padding()

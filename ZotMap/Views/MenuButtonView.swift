@@ -41,8 +41,8 @@ struct MenuButtonView: View {
             }
         } label: {
             Image(systemName: "line.3.horizontal")
-                .frame(height: 50)
-                .frame(maxWidth: 50)
+                .frame(height: Constants().menuButtonHeight)
+                .frame(maxWidth: Constants().menuButtonWidth)
         }
         .background(.thickMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 10))

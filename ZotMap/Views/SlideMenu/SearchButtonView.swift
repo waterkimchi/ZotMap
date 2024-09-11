@@ -14,7 +14,7 @@ struct SearchButtonView: View {
     var body: some View {
         Button(action: vm.toggleLocationList) {
             Image(systemName: "magnifyingglass")
-                .frame(width: 50, height: 50)
+                .frame(width: Constants().menuButtonWidth, height: Constants().menuButtonHeight)
                 .contentShape(RoundedRectangle(cornerRadius: 10))
         }
         .background(.thickMaterial)

@@ -59,6 +59,7 @@ extension LocationView {
     
     private var dimSquare: some View {
         Rectangle()
+            .foregroundStyle(.black)
             .opacity(0.3)
             .ignoresSafeArea()
             .onTapGesture {

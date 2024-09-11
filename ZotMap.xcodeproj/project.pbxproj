@@ -22,6 +22,7 @@
 		553F2C2A2C8D6D6800483ABA /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C292C8D6D6800483ABA /* LocationView.swift */; };
 		553F2C2C2C8D6D8C00483ABA /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C2B2C8D6D8C00483ABA /* LocationViewModel.swift */; };
 		553F2C2F2C8E51C200483ABA /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F2C2E2C8E51C200483ABA /* MenuButtonView.swift */; };
+		554720262C920CD9007B0B64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554720252C920CD9007B0B64 /* Constants.swift */; };
 		55F06C502C8FE9D3001DF4BC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F06C4F2C8FE9D3001DF4BC /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		553F2C292C8D6D6800483ABA /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		553F2C2B2C8D6D8C00483ABA /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		553F2C2E2C8E51C200483ABA /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
+		554720252C920CD9007B0B64 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		55F06C4F2C8FE9D3001DF4BC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 				553F2BF32C8D683B00483ABA /* ZotMapApp.swift */,
 				553F2BF52C8D683B00483ABA /* ContentView.swift */,
 				553F2BF72C8D683B00483ABA /* Item.swift */,
+				554720252C920CD9007B0B64 /* Constants.swift */,
 				553F2C262C8D6C6400483ABA /* DataServices */,
 				553F2C222C8D6AC600483ABA /* Views */,
 				553F2C232C8D6ACD00483ABA /* ViewModels */,
@@ -326,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				553F2BF62C8D683B00483ABA /* ContentView.swift in Sources */,
+				554720262C920CD9007B0B64 /* Constants.swift in Sources */,
 				553F2C2F2C8E51C200483ABA /* MenuButtonView.swift in Sources */,
 				553F2C2A2C8D6D6800483ABA /* LocationView.swift in Sources */,
 				553F2BF82C8D683B00483ABA /* Item.swift in Sources */,
