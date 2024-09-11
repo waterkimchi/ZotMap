@@ -75,11 +75,11 @@ extension SlideMenuView {
                     
                     VStack(alignment: .leading) {
                         Text(locations.name)
-                            .font(.custom("Montserrat-Medium", size: 20))
+                            .font(.custom("Montserrat-SemiBold", size: 20))
                             .foregroundStyle(.accentYellow)
                         Text(locations.cityName)
-                            .font(.subheadline)
-                            .foregroundStyle(.black)
+                            .font(.custom("Montserrat-Regular", size: 16))
+                            .foregroundStyle(.white)
                     }
                 }
                 .listRowBackground(Color.accentBlue)
