@@ -20,11 +20,11 @@ class LocationViewModel: ObservableObject {
             updateMapRegion(location: mapLocation)
         }
     }
-   
+    
     // Curent region on map
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
-   
+    
     // camera position of current map region
     @Published var mapCamera: MapCameraPosition = .automatic
     
@@ -52,6 +52,23 @@ class LocationViewModel: ObservableObject {
     public func toggleLocationList() {
         withAnimation(.easeInOut) {
             showLocationList.toggle()
+        }
+    }
+    
+    public func filterLocations(contains: String) -> [Location]{
+        if contains.isEmpty {
+            return locations
+        } else {
+            
+            let str = contains.lowercased()
+            var searchedLoc: [Location] = []
+            
+            for loc in locations {
+                if loc.name.lowercased().contains(str) || loc.cityName.lowercased().contains(str) {
+                    searchedLoc.append(loc)
+                }
+            }
+            return searchedLoc
         }
     }
 }

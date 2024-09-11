@@ -13,7 +13,7 @@ struct SlideMenuView: View {
     
     @State private var searchText: String = ""
     @State private var showCancelButton: Bool = false
-    
+    @State private var searchIsActive: Bool = false
     
     var body: some View {
         ZStack {
@@ -21,7 +21,9 @@ struct SlideMenuView: View {
                 VStack(alignment: .leading) {
                     header
                     searchBar
-                    locationList
+                    if !searchIsActive {
+                        locationList
+                    }
                     Spacer()
                 }
                 .padding()
@@ -47,7 +49,7 @@ extension SlideMenuView {
             Rectangle()
                 .frame(width: Constants().slideHeaderSquareWidth, height: Constants().slideHeaderSquareHeight)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
-                .opacity(0.5)
+                .opacity(0.4)
                 .shadow(radius: 10)
                 .padding()
             HStack {
@@ -67,7 +69,7 @@ extension SlideMenuView {
     
     private var locationList: some View {
         List {
-            ForEach(vm.locations) { locations in
+            ForEach(vm.filterLocations(contains: searchText)) { locations in
                 HStack {
                     if let imageName = locations.imageNames.first {
                         Image(imageName)
@@ -99,15 +101,20 @@ extension SlideMenuView {
                 RoundedRectangle(cornerRadius: 10)
                     .frame(height: 35)
                     .foregroundStyle(.black)
-                    .opacity(0.2)
-                Spacer(minLength: 50)
+                    .opacity(0.15)
+                Spacer(minLength: 15)
             }
             
             HStack {
                 Spacer(minLength: 25)
                 TextField("", text: $searchText, prompt: Text("search").foregroundStyle(.gray))
-                .foregroundStyle(.white)
-                Spacer(minLength: 55)
+                    .foregroundStyle(.white)
+                    .autocorrectionDisabled()
+                    .textFieldStyle(.plain)
+                    .searchable(text: $searchText, isPresented: $searchIsActive)
+                
+                
+                Spacer(minLength: 25)
             }
         }
         

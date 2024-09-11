@@ -15,6 +15,6 @@ struct Constants {
     
     // slide menu
     public let slideMenuWidth: CGFloat = 300
-    public let slideHeaderSquareWidth: CGFloat = 200
+    public let slideHeaderSquareWidth: CGFloat = 240
     public let slideHeaderSquareHeight: CGFloat = 70
 }
