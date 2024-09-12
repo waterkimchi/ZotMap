@@ -15,7 +15,7 @@ struct ZotMapApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LocationView()
+            MainView()
                 .environmentObject(vm)
         }
     }
