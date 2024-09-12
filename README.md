@@ -30,6 +30,7 @@ git clone "https://github.com/waterkimchi/ZotMap.git"
 
 * [MapKit](https://developer.apple.com/documentation/mapkit/) - MapKit provided by iOS 15 update, used for overall map design.
 * [UCI Map](https://map.uci.edu/?id=463#!s/) - Map reference used for various structures and buildings around campus.
+* [PeterPortal](https://api.peterportal.org) - Course list API, modified to include coordinate data
 * Xcode(SwiftUI) - Swift and Xcode has been used for this project.
 
 ## Authors
