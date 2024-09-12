@@ -8,6 +8,7 @@
 import Foundation
 import MapKit
 import SwiftUI
+import Combine
 
 class LocationViewModel: ObservableObject {
     
@@ -30,6 +31,8 @@ class LocationViewModel: ObservableObject {
     
     
     @Published var showLocationList: Bool = false
+    
+   
     
     init() {
         let locations = LocationsDataService.locations

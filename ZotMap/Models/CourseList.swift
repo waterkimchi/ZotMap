@@ -11,22 +11,22 @@ import Foundation
 // api link: https://api.peterportal.org/rest/v0/courses/all
 // REST API call for json
 
-struct CourseList: Identifiable {
+struct CourseList: Identifiable, Codable {
     let id, department, number, school: String
     let title, courseLevel: String
-    let departmentAlias: [String]
-    let units: [Int]
-    let description, departmentName: String
-    let professorHistory: [String]
-    let prerequisiteTree: String
-    let prerequisiteList: [String]
-    let prerequisiteText: String
-    let prerequisiteFor: [String]
-    let repeatability, gradingOption, concurrent, sameAs: String
-    let restriction, overlap, corequisite: String
-    let geList: [String]
-    let geText: String
-    let terms: [String]
+    let departmentAlias: [String?]
+    let units: [Double?]
+    let description, departmentName: String?
+    let professorHistory: [String?]
+    let prerequisiteTree: String?
+    let prerequisiteList: [String?]
+    let prerequisiteText: String?
+    let prerequisiteFor: [String?]
+    let repeatability, gradingOption, concurrent, sameAs: String?
+    let restriction, overlap, corequisite: String?
+    let geList: [String?]
+    let geText: String?
+    let terms: [String?]
     
     enum CodingKeys: String, CodingKey {
         case id, department, number, school, title

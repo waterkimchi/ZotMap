@@ -2,7 +2,7 @@
 //  MainView.swift
 //  ZotMap
 //
-//  Created by Hyunsu Lim on 9/11/24.
+//  Created by Hyunsu Lim on 9/12/24.
 //
 
 import SwiftUI
@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @EnvironmentObject private var vm: LocationViewModel
+    @EnvironmentObject private var cvm: CourseViewModel
     
     var body: some View {
         TabView {
@@ -18,7 +19,7 @@ struct MainView: View {
                     Image(systemName: "map.fill")
                     Text("Map")
                 }
-           CourseView()
+            CourseView()
                 .tabItem {
                     Image(systemName: "books.vertical.fill")
                     Text("Courses")
@@ -30,4 +31,5 @@ struct MainView: View {
 #Preview {
     MainView()
         .environmentObject(LocationViewModel())
+        .environmentObject(CourseViewModel())
 }

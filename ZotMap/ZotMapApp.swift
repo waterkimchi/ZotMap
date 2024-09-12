@@ -12,11 +12,13 @@ import SwiftData
 struct ZotMapApp: App {
     
     @StateObject private var vm = LocationViewModel()
+    @StateObject private var cvm = CourseViewModel()
     
     var body: some Scene {
         WindowGroup {
             MainView()
                 .environmentObject(vm)
+                .environmentObject(cvm)
         }
     }
 }
