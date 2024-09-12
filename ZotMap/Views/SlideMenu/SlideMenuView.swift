@@ -49,6 +49,7 @@ extension SlideMenuView {
             Rectangle()
                 .frame(width: Constants().slideHeaderSquareWidth, height: Constants().slideHeaderSquareHeight)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
+                .foregroundStyle(Color.black)
                 .opacity(0.4)
                 .shadow(radius: 10)
                 .padding()
@@ -70,22 +71,26 @@ extension SlideMenuView {
     private var locationList: some View {
         List {
             ForEach(vm.filterLocations(contains: searchText)) { locations in
-                HStack {
-                    if let imageName = locations.imageNames.first {
-                        Image(imageName)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 45, height: 45)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
-                    }
-                    
-                    VStack(alignment: .leading) {
-                        Text(locations.name)
-                            .font(.custom("Montserrat-SemiBold", size: 20))
-                            .foregroundStyle(.accentYellow)
-                        Text(locations.cityName)
-                            .font(.custom("Montserrat-Regular", size: 16))
-                            .foregroundStyle(.white)
+                Button {
+                    vm.showNextLocation(location: locations)
+                } label: {
+                    HStack {
+                        if let imageName = locations.imageNames.first {
+                            Image(imageName)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 45, height: 45)
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                        }
+                        
+                        VStack(alignment: .leading) {
+                            Text(locations.name)
+                                .font(.custom("Montserrat-SemiBold", size: 20))
+                                .foregroundStyle(.accentYellow)
+                            Text(locations.cityName)
+                                .font(.custom("Montserrat-Regular", size: 16))
+                                .foregroundStyle(.white)
+                        }
                     }
                 }
                 .listRowBackground(Color.accentBlue)

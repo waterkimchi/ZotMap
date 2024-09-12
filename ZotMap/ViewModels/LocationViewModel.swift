@@ -71,4 +71,11 @@ class LocationViewModel: ObservableObject {
             return searchedLoc
         }
     }
+    
+    public func showNextLocation(location: Location) {
+        withAnimation(.easeInOut) {
+            mapLocation = location
+            showLocationList = false
+        }
+    }
 }
