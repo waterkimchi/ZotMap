@@ -1,0 +1,1208 @@
+[
+    {
+        "buildingName": "Art Culture & Technology (ACT)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6505063635101,
+        "longitude": -117.844863363261
+    },
+    {
+        "buildingName": "Art Studio (ART)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6501413117761,
+        "longitude": -117.844867627333
+    },
+    {
+        "buildingName": "Arts Annex (ARAN)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6465988399402,
+        "longitude": -117.846750257678
+    },
+    {
+        "buildingName": "Arts Instruction & Technology Resource Center (AITRC)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6498331169416,
+        "longitude": -117.843961813946
+    },
+    {
+        "buildingName": "Choral Studio",
+        "buildingCategory": "Arts",
+        "latitude": 33.6495423682966,
+        "longitude": -117.843996103241
+    },
+    {
+        "buildingName": "Claire Trevor Theatre (CTT)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6496157192144,
+        "longitude": -117.845318443868
+    },
+    {
+        "buildingName": "Contemporary Arts Center (CAC)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6499758529779,
+        "longitude": -117.845287819647
+    },
+    {
+        "buildingName": "Drama Building (DRA)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6497666605137,
+        "longitude": -117.845008069952
+    },
+    {
+        "buildingName": "Humanities Interim Classroom Facility (HICF)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6469376151411,
+        "longitude": -117.846771190218
+    },
+    {
+        "buildingName": "Irvine Barclay Theatre",
+        "buildingCategory": "Arts",
+        "latitude": 33.6490024944772,
+        "longitude": -117.840679675997
+    },
+    {
+        "buildingName": "Little Theatre",
+        "buildingCategory": "Arts",
+        "latitude": 33.647095680016,
+        "longitude": -117.844067782517
+    },
+    {
+        "buildingName": "Mesa Arts Building (MAB)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6502177950738,
+        "longitude": -117.846270140628
+    },
+    {
+        "buildingName": "Music & Media Building (MM)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6492439251418,
+        "longitude": -117.844479510912
+    },
+    {
+        "buildingName": "Production Studio",
+        "buildingCategory": "Arts",
+        "latitude": 33.6498587348758,
+        "longitude": -117.845896385828
+    },
+    {
+        "buildingName": "Robert Cohen Theatre & Dance Studios (DS)",
+        "buildingCategory": "Arts",
+        "latitude": 33.649459089793,
+        "longitude": -117.845633972445
+    },
+    {
+        "buildingName": "Sculpture & Ceramic Studios (SCS)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6502169685714,
+        "longitude": -117.844515678148
+    },
+    {
+        "buildingName": "Studio Four (STU4)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6500915234108,
+        "longitude": -117.845678920456
+    },
+    {
+        "buildingName": "University Art Gallery (UAG)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6499432447894,
+        "longitude": -117.84444792382
+    },
+    {
+        "buildingName": "William J. Gillespie Performance Studios(PSTU)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6505902384477,
+        "longitude": -117.845365167997
+    },
+    {
+        "buildingName": "Winifred Smith Hall (WSH)",
+        "buildingCategory": "Arts",
+        "latitude": 33.6495693500154,
+        "longitude": -117.844421743116
+    },
+    {
+        "buildingName": "Yurt Dance Studio",
+        "buildingCategory": "Arts",
+        "latitude": 33.6420238111771,
+        "longitude": -117.828022557584
+    },
+    {
+        "buildingName": "Anteater Learning Pavilion (ALP)",
+        "buildingCategory": "Biological Sciences",
+        "latitude": 33.646955466844,
+        "longitude": -117.844723244803
+    },
+    {
+        "buildingName": "Biological Sciences III (BS3)",
+        "buildingCategory": "Biological Sciences + Administration",
+        "latitude": 33.6452233439199,
+        "longitude": -117.845799860328
+    },
+    {
+        "buildingName": "Bison Modular (BIMO)",
+        "buildingCategory": "Biological Sciences + Pharmaceutical Sciences",
+        "latitude": 33.6436902826313,
+        "longitude": -117.84620204479
+    },
+    {
+        "buildingName": "Bonney Research Laboratory (BRL)",
+        "buildingCategory": "Biological Sciences + Research Facilities",
+        "latitude": 33.6461373280336,
+        "longitude": -117.846082842954
+    },
+    {
+        "buildingName": "Center for the Neurobiology of Learning & Memory / Herklotz Research Facility",
+        "buildingCategory": "Biological Sciences",
+        "latitude": 33.6466078258469,
+        "longitude": -117.846423543159
+    },
+    {
+        "buildingName": "Greenhouse",
+        "buildingCategory": "Biological Sciences + Research Facilities",
+        "latitude": 33.6473367318123,
+        "longitude": -117.845433988196
+    },
+    {
+        "buildingName": "Howard Schneiderman Lecture Hall (HSLH)",
+        "buildingCategory": "Biological Sciences",
+        "latitude": 33.6455921565544,
+        "longitude": -117.844735337856
+    },
+    {
+        "buildingName": "McGaugh Hall (MH)",
+        "buildingCategory": "Biological Sciences",
+        "latitude": 33.6451807201786,
+        "longitude": -117.844745184049
+    },
+    {
+        "buildingName": "Qureshey Research Laboratory (QRL)",
+        "buildingCategory": "Biological Sciences",
+        "latitude": 33.6464987964964,
+        "longitude": -117.845823146379
+    },
+    {
+        "buildingName": "Steinhaus Hall (SH)",
+        "buildingCategory": "Biological Sciences + Pharmaceutical Sciences",
+        "latitude": 33.6461801207789,
+        "longitude": -117.84486911364
+    },
+    {
+        "buildingName": "Merage School of Business (SB1)",
+        "buildingCategory": "Business",
+        "latitude": 33.6469784928852,
+        "longitude": -117.837884988895
+    },
+    {
+        "buildingName": "Merage School of Business II (SB2)",
+        "buildingCategory": "Business",
+        "latitude": 33.6467070021427,
+        "longitude": -117.83779251504
+    },
+    {
+        "buildingName": "Multipurpose Academic & Administrative Building (MPAA)",
+        "buildingCategory": "Business + Law + Administration",
+        "latitude": 33.647032881344,
+        "longitude": -117.837000258402
+    },
+    {
+        "buildingName": "Education Building (EDUC)",
+        "buildingCategory": "Education",
+        "latitude": 33.6471056444281,
+        "longitude": -117.835902439388
+    },
+    {
+        "buildingName": "Engineering & Computing Trailer (ECT)",
+        "buildingCategory": "Engineering",
+        "latitude": 33.6440608413013,
+        "longitude": -117.840150260395
+    },
+    {
+        "buildingName": "Engineering Annex",
+        "buildingCategory": "Engineering",
+        "latitude": 33.6441667176011,
+        "longitude": -117.840376078932
+    },
+    {
+        "buildingName": "Engineering Gateway (EG)",
+        "buildingCategory": "Engineering + Administration",
+        "latitude": 33.6431622374758,
+        "longitude": -117.840143529974
+    },
+    {
+        "buildingName": "Engineering Hall (EH)",
+        "buildingCategory": "Engineering + Administration",
+        "latitude": 33.6435614762578,
+        "longitude": -117.841416630443
+    },
+    {
+        "buildingName": "Engineering Laboratory Facility (ELF)",
+        "buildingCategory": "Engineering",
+        "latitude": 33.6437960585408,
+        "longitude": -117.839782968535
+    },
+    {
+        "buildingName": "Engineering Lecture Hall (ELH)",
+        "buildingCategory": "Engineering",
+        "latitude": 33.6444251584193,
+        "longitude": -117.840645527703
+    },
+    {
+        "buildingName": "Engineering Tower (ET)",
+        "buildingCategory": "Engineering",
+        "latitude": 33.6447033644702,
+        "longitude": -117.841119709441
+    },
+    {
+        "buildingName": "Interdisciplinary Science and Engineering Building (ISEB)",
+        "buildingCategory": "Engineering + Information and Computer Science + Physical Sciences + Research Facilities",
+        "latitude": 33.6430369372497,
+        "longitude": -117.843755951793
+    },
+    {
+        "buildingName": "Interim Classroom Facility (ICF)",
+        "buildingCategory": "Engineering + Information and Computer Science",
+        "latitude": 33.6443912083005,
+        "longitude": -117.84000044408
+    },
+    {
+        "buildingName": "McDonnell Douglas Engineering Auditorium (MDE)",
+        "buildingCategory": "Engineering",
+        "latitude": 33.6438252423938,
+        "longitude": -117.840674515468
+    },
+    {
+        "buildingName": "Rockwell Engineering Center (REC)",
+        "buildingCategory": "Engineering",
+        "latitude": 33.6439262825447,
+        "longitude": -117.840514253486
+    },
+    {
+        "buildingName": "Humanities Gateway (HG)",
+        "buildingCategory": "Humanities + Research Facilities",
+        "latitude": 33.6481424974296,
+        "longitude": -117.844372465835
+    },
+    {
+        "buildingName": "Humanities Hall (HH)",
+        "buildingCategory": "Humanities",
+        "latitude": 33.6475049117344,
+        "longitude": -117.844090014113
+    },
+    {
+        "buildingName": "Humanities Instructional Building (HIB)",
+        "buildingCategory": "Humanities",
+        "latitude": 33.648313681893,
+        "longitude": -117.843876609575
+    },
+    {
+        "buildingName": "Humanities Interim Classroom Facility (HICF)/Studio Art Trailer",
+        "buildingCategory": "Humanities",
+        "latitude": 33.6469094994047,
+        "longitude": -117.846768662623
+    },
+    {
+        "buildingName": "Krieger Hall (KH)",
+        "buildingCategory": "Humanities",
+        "latitude": 33.6475879604251,
+        "longitude": -117.843553058894
+    },
+    {
+        "buildingName": "Donald Bren Hall (DBH)",
+        "buildingCategory": "Information and Computer Science + Administration",
+        "latitude": 33.6430270751142,
+        "longitude": -117.841899047737
+    },
+    {
+        "buildingName": "Information & Computer Science (ICS)",
+        "buildingCategory": "Information and Computer Science",
+        "latitude": 33.6442227901879,
+        "longitude": -117.841709482714
+    },
+    {
+        "buildingName": "Information & Computer Science 2 (ICS2)",
+        "buildingCategory": "Information and Computer Science",
+        "latitude": 33.6439920281576,
+        "longitude": -117.841665657686
+    },
+    {
+        "buildingName": "Law Building (LAW)",
+        "buildingCategory": "Law",
+        "latitude": 33.6467949001451,
+        "longitude": -117.835993115373
+    },
+    {
+        "buildingName": "Beckman Laser Institute (BLI)",
+        "buildingCategory": "Medicine + Research Facilities",
+        "latitude": 33.6441419264068,
+        "longitude": -117.849917210545
+    },
+    {
+        "buildingName": "Gavin Herbert Eye Institute",
+        "buildingCategory": "Medicine + Research Facilities",
+        "latitude": 33.6417976540048,
+        "longitude": -117.852220153641
+    },
+    {
+        "buildingName": "Gillespie Neuroscience Research Facility (GNRF)",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6439933089573,
+        "longitude": -117.85123981638
+    },
+    {
+        "buildingName": "Gottschalk Medical Plaza",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6468405593917,
+        "longitude": -117.851113065795
+    },
+    {
+        "buildingName": "Hewitt Research Hall (HRH)",
+        "buildingCategory": "Medicine + Research Facilities",
+        "latitude": 33.6433421892408,
+        "longitude": -117.851796179078
+    },
+    {
+        "buildingName": "Irvine Hall (IH)",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6445774366043,
+        "longitude": -117.852640522617
+    },
+    {
+        "buildingName": "Medical Education Building",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6446333954171,
+        "longitude": -117.852224570613
+    },
+    {
+        "buildingName": "Medical Sciences A (MS-A)",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6450427824102,
+        "longitude": -117.849878082931
+    },
+    {
+        "buildingName": "Medical Sciences A Administration",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6448418210638,
+        "longitude": -117.849961231407
+    },
+    {
+        "buildingName": "Medical Sciences A Annex",
+        "buildingCategory": "Medicine",
+        "latitude": 33.644819128315,
+        "longitude": -117.850407029278
+    },
+    {
+        "buildingName": "Medical Sciences B (MS-B)",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6455185523998,
+        "longitude": -117.849909775587
+    },
+    {
+        "buildingName": "Medical Sciences C (MS-C)",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6455007066003,
+        "longitude": -117.850400240668
+    },
+    {
+        "buildingName": "Medical Sciences Classroom Facility",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6453637431795,
+        "longitude": -117.852382869016
+    },
+    {
+        "buildingName": "Medical Sciences D (MS-D) | Cheney Hall",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6454977415837,
+        "longitude": -117.851079501325
+    },
+    {
+        "buildingName": "Medical Sciences E (MS-E)",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6453895874649,
+        "longitude": -117.851504341541
+    },
+    {
+        "buildingName": "Medical Surge I (MS1)",
+        "buildingCategory": "Medicine + Administration",
+        "latitude": 33.6464248214741,
+        "longitude": -117.850157984791
+    },
+    {
+        "buildingName": "Medical Surge II (MS2)",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6468823521839,
+        "longitude": -117.850312639396
+    },
+    {
+        "buildingName": "MRI 3T Trailer",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6452643110113,
+        "longitude": -117.852205899055
+    },
+    {
+        "buildingName": "MRI 4T Trailer",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6454772068007,
+        "longitude": -117.85234157577
+    },
+    {
+        "buildingName": "Sprague Hall (SPH)",
+        "buildingCategory": "Medicine + Research Facilities",
+        "latitude": 33.6440387834645,
+        "longitude": -117.852062167942
+    },
+    {
+        "buildingName": "Sue & Bill Gross Nursing & Health Sciences Hall",
+        "buildingCategory": "Medicine + Nursing Science + Research Facilities",
+        "latitude": 33.6410572523186,
+        "longitude": -117.852757854299
+    },
+    {
+        "buildingName": "Susan & Henry Samueli College of Health Sciences Building",
+        "buildingCategory": "Medicine + Nursing Science + Research Facilities",
+        "latitude": 33.6408434974473,
+        "longitude": -117.853133323588
+    },
+    {
+        "buildingName": "Tamkin Student Lecture Building",
+        "buildingCategory": "Medicine",
+        "latitude": 33.6455287963959,
+        "longitude": -117.851962147694
+    },
+    {
+        "buildingName": "Berk Hall (BH)",
+        "buildingCategory": "Pharmaceutical Sciences",
+        "latitude": 33.6461765523544,
+        "longitude": -117.849504523211
+    },
+    {
+        "buildingName": "Croul Hall (CRH)",
+        "buildingCategory": "Physical Sciences",
+        "latitude": 33.643649065581,
+        "longitude": -117.844658327141
+    },
+    {
+        "buildingName": "Frederick Reines Hall (FRH)",
+        "buildingCategory": "Physical Sciences",
+        "latitude": 33.6440763061068,
+        "longitude": -117.843485795317
+    },
+    {
+        "buildingName": "Physical Sciences + Administration",
+        "buildingCategory": "Physical Sciences",
+        "latitude": 33.6421250916272,
+        "longitude": -117.844446092002
+    },
+    {
+        "buildingName": "Natural Sciences I (NS1)",
+        "buildingCategory": "Physical Sciences",
+        "latitude": 33.6442654810155,
+        "longitude": -117.845824319698
+    },
+    {
+        "buildingName": "Natural Sciences II (NS2)",
+        "buildingCategory": "Physical Sciences",
+        "latitude": 33.6438163392493,
+        "longitude": -117.845695583006
+    },
+    {
+        "buildingName": "Parkview Classroom Building (PCB)",
+        "buildingCategory": "Physical Sciences",
+        "latitude": 33.6444956050293,
+        "longitude": -117.842797539161
+    },
+    {
+        "buildingName": "Physical Sciences Classroom Building (PSCB)",
+        "buildingCategory": "Physical Sciences",
+        "latitude": 33.6434139239611,
+        "longitude": -117.843546619938
+    },
+    {
+        "buildingName": "Physical Sciences High Bay",
+        "buildingCategory": "Physical Sciences + Research Facilities",
+        "latitude": 33.643604408451,
+        "longitude": -117.84519623788
+    },
+    {
+        "buildingName": "Physical Sciences Lecture Hall (PSLH)",
+        "buildingCategory": "Physical Sciences",
+        "latitude": 33.6434266750654,
+        "longitude": -117.843997181962
+    },
+    {
+        "buildingName": "Rowland Hall (RH)",
+        "buildingCategory": "Physical Sciences",
+        "latitude": 33.6444733035443,
+        "longitude": -117.844140404019
+    },
+    {
+        "buildingName": "Anteater Instruction & Research Building (AIRB)",
+        "buildingCategory": "Public Health + Research Facilities",
+        "latitude": 33.6427679414988,
+        "longitude": -117.837692662138
+    },
+    {
+        "buildingName": "Social & Behavioral Sciences Gateway (SBSG)",
+        "buildingCategory": "Social Ecology + Social Sciences",
+        "latitude": 33.6473925802464,
+        "longitude": -117.839022166538
+    },
+    {
+        "buildingName": "Social Ecology I (SE)",
+        "buildingCategory": "Social Ecology + Administration",
+        "latitude": 33.6461949833998,
+        "longitude": -117.83870799605
+    },
+    {
+        "buildingName": "Social Ecology II (SE2)",
+        "buildingCategory": "Social Ecology",
+        "latitude": 33.6465639911378,
+        "longitude": -117.838967805842
+    },
+    {
+        "buildingName": "Social Science Hall (SSH)",
+        "buildingCategory": "Social Sciences",
+        "latitude": 33.6462382654243,
+        "longitude": -117.840069766735
+    },
+    {
+        "buildingName": "Social Science Laboratory (SSL)",
+        "buildingCategory": "Social Sciences",
+        "latitude": 33.6459806595937,
+        "longitude": -117.840007475764
+    },
+    {
+        "buildingName": "Social Science Lecture Hall (SSLH)",
+        "buildingCategory": "Social Sciences",
+        "latitude": 33.6471934075912,
+        "longitude": -117.839772377565
+    },
+    {
+        "buildingName": "Social Science Plaza A (SSPA)",
+        "buildingCategory": "Social Sciences",
+        "latitude": 33.6469629889,
+        "longitude": -117.839579744761
+    },
+    {
+        "buildingName": "Social Science Plaza B (SSPB)",
+        "buildingCategory": "Social Sciences",
+        "latitude": 33.6469878487627,
+        "longitude": -117.83907017714
+    },
+    {
+        "buildingName": "Social Science Tower (SST)",
+        "buildingCategory": "Social Sciences + Administration",
+        "latitude": 33.6464767778059,
+        "longitude": -117.840181055988
+    },
+    {
+        "buildingName": "Social Science Trailer (SSTR)",
+        "buildingCategory": "Social Sciences",
+        "latitude": 33.6469902836886,
+        "longitude": -117.840232581153
+    },
+    {
+        "buildingName": "100 Theory",
+        "buildingCategory": "Administration + Research Facilities",
+        "latitude": 33.6442350379518,
+        "longitude": -117.855697067464
+    },
+    {
+        "buildingName": "101 Academy",
+        "buildingCategory": "Administration",
+        "latitude": 33.647955534718,
+        "longitude": -117.854092888846
+    },
+    {
+        "buildingName": "111 Theory",
+        "buildingCategory": "Administration",
+        "latitude": 33.641892982336,
+        "longitude": -117.855346581044
+    },
+    {
+        "buildingName": "120 Theory",
+        "buildingCategory": "Administration",
+        "latitude": 33.6437741972869,
+        "longitude": -117.857324672737
+    },
+    {
+        "buildingName": "131 Innovation",
+        "buildingCategory": "Administration",
+        "latitude": 33.6462854486004,
+        "longitude": -117.858398438712
+    },
+    {
+        "buildingName": "141 Innovation",
+        "buildingCategory": "Administration",
+        "latitude": 33.6454744272358,
+        "longitude": -117.85837200267
+    },
+    {
+        "buildingName": "5251 California",
+        "buildingCategory": "Administration",
+        "latitude": 33.6381639805116,
+        "longitude": -117.851397211468
+    },
+    {
+        "buildingName": "5270 California",
+        "buildingCategory": "Administration",
+        "latitude": 33.6380581242518,
+        "longitude": -117.849133161388
+    },
+    {
+        "buildingName": "Administrative Modular",
+        "buildingCategory": "Administration",
+        "latitude": 33.6419843921296,
+        "longitude": -117.846203715517
+    },
+    {
+        "buildingName": "Aldrich Hall (ALH)",
+        "buildingCategory": "Administration",
+        "latitude": 33.6483563942325,
+        "longitude": -117.841257843635
+    },
+    {
+        "buildingName": "American Heart Association",
+        "buildingCategory": "Administration",
+        "latitude": 33.6484356804381,
+        "longitude": -117.830520392914
+    },
+    {
+        "buildingName": "Faculty and Staff Housing Office",
+        "buildingCategory": "Administration",
+        "latitude": 33.6362302202665,
+        "longitude": -117.835819865488
+    },
+    {
+        "buildingName": "Mesa Office Building (MOB)",
+        "buildingCategory": "Administration",
+        "latitude": 33.6512369723381,
+        "longitude": -117.84635256298
+    },
+    {
+        "buildingName": "Newkirk Alumni Center",
+        "buildingCategory": "Administration",
+        "latitude": 33.6524099188943,
+        "longitude": -117.846184126986
+    },
+    {
+        "buildingName": "Public Services (PSB)",
+        "buildingCategory": "Administration",
+        "latitude": 33.6465673718321,
+        "longitude": -117.834904006813
+    },
+    {
+        "buildingName": "Student Center (SC)",
+        "buildingCategory": "Administration",
+        "latitude": 33.6488646378058,
+        "longitude": -117.842123322493
+    },
+    {
+        "buildingName": "Student Center South",
+        "buildingCategory": "Administration",
+        "latitude": 33.6485576047991,
+        "longitude": -117.842718662787
+    },
+    {
+        "buildingName": "Undergraduate Education A",
+        "buildingCategory": "Administration",
+        "latitude": 33.6464734962671,
+        "longitude": -117.837345964708
+    },
+    {
+        "buildingName": "Undergraduate Education B",
+        "buildingCategory": "Administration",
+        "latitude": 33.6462484373741,
+        "longitude": -117.837563934164
+    },
+    {
+        "buildingName": "University Tower (UT)",
+        "buildingCategory": "Administration",
+        "latitude": 33.6507451953009,
+        "longitude": -117.838281581071
+    },
+    {
+        "buildingName": "Anteater Recreation Center (ARC)",
+        "buildingCategory": "Campus Recreation",
+        "latitude": 33.6433829681059,
+        "longitude": -117.827935942403
+    },
+    {
+        "buildingName": "Court Building",
+        "buildingCategory": "Campus Recreation",
+        "latitude": 33.6435162653915,
+        "longitude": -117.826823733336
+    },
+    {
+        "buildingName": "Field Building",
+        "buildingCategory": "Campus Recreation",
+        "latitude": 33.6421794985429,
+        "longitude": -117.826041375384
+    },
+    {
+        "buildingName": "Continuing Education 1 (DCE)",
+        "buildingCategory": "Continuing Education",
+        "latitude": 33.6450663703084,
+        "longitude": -117.834860476569
+    },
+    {
+        "buildingName": "Continuing Education 3",
+        "buildingCategory": "Continuing Education",
+        "latitude": 33.645767595631,
+        "longitude": -117.837271597622
+    },
+    {
+        "buildingName": "Continuing Education 4",
+        "buildingCategory": "Continuing Education",
+        "latitude": 33.6459667473773,
+        "longitude": -117.837319443151
+    },
+    {
+        "buildingName": "Continuing Education 5",
+        "buildingCategory": "Continuing Education",
+        "latitude": 33.6452019712943,
+        "longitude": -117.836443055226
+    },
+    {
+        "buildingName": "Continuing Education 6",
+        "buildingCategory": "Continuing Education",
+        "latitude": 33.6450652192585,
+        "longitude": -117.836069860091
+    },
+    {
+        "buildingName": "Gateway Study Center (GC)",
+        "buildingCategory": "Libraries",
+        "latitude": 33.6474174165807,
+        "longitude": -117.841830083606
+    },
+    {
+        "buildingName": "Langson Library (LLIB)",
+        "buildingCategory": "Libraries",
+        "latitude": 33.6471297698493,
+        "longitude": -117.841133154295
+    },
+    {
+        "buildingName": "Law Library",
+        "buildingCategory": "Libraries",
+        "latitude": 33.6468021103675,
+        "longitude": -117.835969398937
+    },
+    {
+        "buildingName": "Science Library (SLIB)",
+        "buildingCategory": "Libraries",
+        "latitude": 33.6456771648986,
+        "longitude": -117.846453226311
+    },
+    {
+        "buildingName": "Beckman Center of the National Academies of Sciences & Engineering",
+        "buildingCategory": "Research Facilities",
+        "latitude": 33.6492183543507,
+        "longitude": -117.854216954117
+    },
+    {
+        "buildingName": "California Institute for Telecommunications and Information Technology (Calit2)",
+        "buildingCategory": "Research Facilities",
+        "latitude": 33.6428013041184,
+        "longitude": -117.841191272052
+    },
+    {
+        "buildingName": "Center for the Neurobiology of Learning & Memory Annex (CNLM)",
+        "buildingCategory": "Research Facilities",
+        "latitude": 33.6466029800942,
+        "longitude": -117.846415450631
+    },
+    {
+        "buildingName": "Engineering Laboratory Facility (ELF)",
+        "buildingCategory": "Research Facilities",
+        "latitude": 33.6438289274487,
+        "longitude": -117.839650359654
+    },
+    {
+        "buildingName": "Gillespie Neuroscience Research Facility (GNRF)",
+        "buildingCategory": "Research Facilities",
+        "latitude": 33.6439989078054,
+        "longitude": -117.851293415498
+    },
+    {
+        "buildingName": "Plumwood House (PH)",
+        "buildingCategory": "Research Facilities",
+        "latitude": 33.6448109850111,
+        "longitude": -117.851147167033
+    },
+    {
+        "buildingName": "Qureshey Research Laboratory (QRL)",
+        "buildingCategory": "Research Facilities",
+        "latitude": 33.6465596682139,
+        "longitude": -117.845770972404
+    },
+    {
+        "buildingName": "Sue & Bill Gross Hall: A CIRM Institute",
+        "buildingCategory": "Research Facilities",
+        "latitude": 33.6435121969593,
+        "longitude": -117.851318150185
+    },
+    {
+        "buildingName": "Anteater Ballpark",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6512695444241,
+        "longitude": -117.84783131552
+    },
+    {
+        "buildingName": "Anteater Stadium",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6502769580782,
+        "longitude": -117.850861353868
+    },
+    {
+        "buildingName": "Anteater Tennis Stadium",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6498303758459,
+        "longitude": -117.848234327552
+    },
+    {
+        "buildingName": "Bren Events Center",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6497313123368,
+        "longitude": -117.846869253432
+    },
+    {
+        "buildingName": "Crawford Clubhouse",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6475803725862,
+        "longitude": -117.849285906584
+    },
+    {
+        "buildingName": "Crawford Field",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6479767751981,
+        "longitude": -117.849028123599
+    },
+    {
+        "buildingName": "Crawford Hall (CH)",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6480065798259,
+        "longitude": -117.848093660263
+    },
+    {
+        "buildingName": "Crawford Pool",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6483642346276,
+        "longitude": -117.847886001747
+    },
+    {
+        "buildingName": "Intercollegiate Athletics Building (IAB)",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6482211728781,
+        "longitude": -117.845594597332
+    },
+    {
+        "buildingName": "Track & Field House",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6499397672717,
+        "longitude": -117.849437754956
+    },
+    {
+        "buildingName": "Vista Field",
+        "buildingCategory": "Athletics",
+        "latitude": 33.6507363827844,
+        "longitude": -117.849225094834
+    },
+    {
+        "buildingName": "American Campus Communities Leasing Center",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6474657793771,
+        "longitude": -117.828790781532
+    },
+    {
+        "buildingName": "Arroyo Vista",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6465754899234,
+        "longitude": -117.827208491013
+    },
+    {
+        "buildingName": "Arroyo Vista Community Center & Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.646711891313,
+        "longitude": -117.828985838797
+    },
+    {
+        "buildingName": "Camino del Sol",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6451922027065,
+        "longitude": -117.824584000362
+    },
+    {
+        "buildingName": "Camino del Sol Community Center & Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6448952268445,
+        "longitude": -117.824546449437
+    },
+    {
+        "buildingName": "Campus Village",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6444277291643,
+        "longitude": -117.847433083323
+    },
+    {
+        "buildingName": "Campus Village Community Center",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6447916545063,
+        "longitude": -117.846945653389
+    },
+    {
+        "buildingName": "Campus Village Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.645177774245,
+        "longitude": -117.846851786067
+    },
+    {
+        "buildingName": "Las Lomas",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6414598802869,
+        "longitude": -117.84204814501
+    },
+    {
+        "buildingName": "Mesa Court",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6521542538149,
+        "longitude": -117.844341225231
+    },
+    {
+        "buildingName": "Mesa Court Community Center",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6527170952244,
+        "longitude": -117.844337182636
+    },
+    {
+        "buildingName": "Mesa Court Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6529747904614,
+        "longitude": -117.845272870762
+    },
+    {
+        "buildingName": "Middle Earth",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6447197113455,
+        "longitude": -117.837212912516
+    },
+    {
+        "buildingName": "Middle Earth Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6446365249478,
+        "longitude": -117.837563821408
+    },
+    {
+        "buildingName": "Palo Verde",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6420522153475,
+        "longitude": -117.833195015277
+    },
+    {
+        "buildingName": "Palo Verde Community Center",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6421091462328,
+        "longitude": -117.83295062405
+    },
+    {
+        "buildingName": "Palo Verde Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.641908919261,
+        "longitude": -117.83315315749
+    },
+    {
+        "buildingName": "Plaza Verde",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.647988584386,
+        "longitude": -117.828741154049
+    },
+    {
+        "buildingName": "Plaza Verde Community Center & Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6473911268155,
+        "longitude": -117.829103675208
+    },
+    {
+        "buildingName": "Plaza Verde II",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6488341669198,
+        "longitude": -117.826679802994
+    },
+    {
+        "buildingName": "Puerta del Sol",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6481473136631,
+        "longitude": -117.831951518796
+    },
+    {
+        "buildingName": "Puerta del Sol Community Center & Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6477459871588,
+        "longitude": -117.832772502534
+    },
+    {
+        "buildingName": "University Hills",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6365643173224,
+        "longitude": -117.836308225818
+    },
+    {
+        "buildingName": "University Hills Community Center",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6362294305339,
+        "longitude": -117.835946932962
+    },
+    {
+        "buildingName": "Verano Place",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.645707332131,
+        "longitude": -117.831942282388
+    },
+    {
+        "buildingName": "Verano Place Community Center",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6463047641449,
+        "longitude": -117.83134124077
+    },
+    {
+        "buildingName": "Verano Place Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6442458073347,
+        "longitude": -117.830330478774
+    },
+    {
+        "buildingName": "Vista del Campo",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6405866476125,
+        "longitude": -117.82391909014
+    },
+    {
+        "buildingName": "Vista del Campo Community Center & Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6404384807012,
+        "longitude": -117.824056627971
+    },
+    {
+        "buildingName": "Vista del Campo Norte",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.6477204919085,
+        "longitude": -117.825012684479
+    },
+    {
+        "buildingName": "Vista del Campo Norte Clubhouse & Housing Office",
+        "buildingCategory": "Campus Housing",
+        "latitude": 33.64779539088,
+        "longitude": -117.82523301778
+    },
+    {
+        "buildingName": "Brandywine",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6453868609854,
+        "longitude": -117.839280958541
+    },
+    {
+        "buildingName": "Cafe Espresso @ Health Sciences",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6417561488854,
+        "longitude": -117.85238602406
+    },
+    {
+        "buildingName": "Cafe Espresso @ Physical Sciences",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6439892404552,
+        "longitude": -117.843533632154
+    },
+    {
+        "buildingName": "Garbanzo Mediterranean Fresh & Peet's Coffee",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6431225610024,
+        "longitude": -117.843615711457
+    },
+    {
+        "buildingName": "Java City Kiosk",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6434079731093,
+        "longitude": -117.841141904538
+    },
+    {
+        "buildingName": "Med Ed Cafe",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6445196315249,
+        "longitude": -117.851934992932
+    },
+    {
+        "buildingName": "Phoenix Food Court",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6455623796846,
+        "longitude": -117.840655797471
+    },
+    {
+        "buildingName": "Starbucks @ Biological Sciences",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6449688058416,
+        "longitude": -117.845548580736
+    },
+    {
+        "buildingName": "Starbucks @ Paul Merage School of Business",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6469794898381,
+        "longitude": -117.838350627672
+    },
+    {
+        "buildingName": "Starbucks @ Student Center",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6484051857611,
+        "longitude": -117.842188752709
+    },
+    {
+        "buildingName": "Student Center (West / East Food Courts)",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.648880063104,
+        "longitude": -117.842465285084
+    },
+    {
+        "buildingName": "The Anteatery",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6511770878919,
+        "longitude": -117.845036912417
+    },
+    {
+        "buildingName": "The Green Room",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6498193477853,
+        "longitude": -117.844704534269
+    },
+    {
+        "buildingName": "UClub Bistro",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6429988129998,
+        "longitude": -117.842572128156
+    },
+    {
+        "buildingName": "Zot N Go Express @ Continuing Education",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.645024772284,
+        "longitude": -117.834940388625
+    },
+    {
+        "buildingName": "Zot N Go Express @ Humanities",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6472333909502,
+        "longitude": -117.843956927787
+    },
+    {
+        "buildingName": "Zot N Go Express @ Side Door",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6455619068462,
+        "longitude": -117.839431973161
+    },
+    {
+        "buildingName": "Zot N Go Express @ Social Sciences (POD)",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.6469898100138,
+        "longitude": -117.839648041066
+    },
+    {
+        "buildingName": "Zot N Go Market",
+        "buildingCategory": "Food and Dining",
+        "latitude": 33.648400092506,
+        "longitude": -117.842705492199
+    }
+]
