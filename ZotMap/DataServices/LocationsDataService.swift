@@ -13,7 +13,7 @@ class LocationsDataService {
     // TODO: Change Data base to replicate UCI
     static let locations: [Location] = [
         Location(
-            name: "UCI campus",
+            name: "UCI Campus",
             cityName: "Irvine",
             coordinates: CLLocationCoordinate2D(latitude: 33.6424, longitude: -117.8417),
             description: "The Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world today, despite its age.",
@@ -24,9 +24,9 @@ class LocationsDataService {
             ],
             link: "https://en.wikipedia.org/wiki/Colosseum"),
         Location(
-            name: "Pantheon",
+            name: "Engineering Hall",
             cityName: "Rome",
-            coordinates: CLLocationCoordinate2D(latitude: 41.8986, longitude: 12.4769),
+            coordinates: CLLocationCoordinate2D(latitude: 33.6438242, longitude: -117.8390805),
             description: "The Pantheon is a former Roman temple and since the year 609 a Catholic church, in Rome, Italy, on the site of an earlier temple commissioned by Marcus Agrippa during the reign of Augustus.",
             imageNames: [
                 "rome-pantheon-1",

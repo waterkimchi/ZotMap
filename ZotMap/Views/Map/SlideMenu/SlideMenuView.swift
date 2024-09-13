@@ -102,7 +102,7 @@ extension SlideMenuView {
     private var searchBar: some View {
         ZStack {
             HStack {
-                Spacer(minLength: 15)
+                Spacer(minLength: 13)
                 RoundedRectangle(cornerRadius: 10)
                     .frame(height: 35)
                     .foregroundStyle(.black)

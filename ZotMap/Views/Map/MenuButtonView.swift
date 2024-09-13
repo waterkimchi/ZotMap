@@ -13,32 +13,14 @@ struct MenuButtonView: View {
     
     var body: some View {
         Menu {
-            ForEach(vm.locations) { location in
+            ForEach(vm.coordinates) { coord in
                 Button {
                     
                 }label: {
-                    HStack{
-                        VStack(alignment: .leading) {
-                            Text(location.name)
-                        }
-                        if let imageName = location.imageNames.first {
-                            Image(imageName)
-                        }
-                    }
+                    Text(coord.name)
                 }
             }
-            Button {
-            } label: {
-                Label("New Album", systemImage: "rectangle.stack.badge.plus")
-            }
-            Button {
-            } label: {
-                Label("New Folder", systemImage: "folder.badge.plus")
-            }
-            Button {
-            } label: {
-                Label("New Shared Album", systemImage: "rectangle.stack.badge.person.crop")
-            }
+            
         } label: {
             Image(systemName: "line.3.horizontal")
                 .frame(height: Constants().menuButtonHeight)

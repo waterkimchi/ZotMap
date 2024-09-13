@@ -28,7 +28,7 @@ class CourseViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    public func filterCourses(contains: String) -> [CourseList] {
+    public func filterCoursesId(contains: String) -> [CourseList] {
         let str = contains.lowercased()
         var searchedCrs: [CourseList] = []
         
@@ -39,4 +39,30 @@ class CourseViewModel: ObservableObject {
         }
         return searchedCrs
     }
+    
+    func filterCoursesDepartment(contains: String) -> [CourseList] {
+        let str = contains.lowercased()
+        var searchedCrs: [CourseList] = []
+        
+        for crs in allCourses {
+            if crs.department.lowercased().contains(str) {
+                searchedCrs.append(crs)
+            }
+        }
+        return searchedCrs
+    }
+    
+    public func categorizeCourses() -> [String] {
+        
+        var categories: [String] = []
+        
+        for crs in allCourses {
+            if !(categories.contains(crs.department)) {
+                categories.append(crs.department)
+            }
+        }
+        
+        return categories
+    }
+    
 }

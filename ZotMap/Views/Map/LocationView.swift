@@ -12,14 +12,16 @@ struct LocationView: View {
     
     @EnvironmentObject private var vm: LocationViewModel
     
-    @State private var mapStyleSelect: MapStyle = .standard
+    @State private var mapStyleSelect: MapStyle = .standard(elevation: .realistic)
     
     var body: some View {
         ZStack {
-            Map(position: $vm.mapCamera)
-                .mapStyle(mapStyleSelect)
-                .ignoresSafeArea()
-                .zIndex(1)
+            Map(position: $vm.mapCamera) {
+                
+            }
+            .mapStyle(mapStyleSelect)
+            
+            .zIndex(1)
             VStack(spacing: 0) {
                 header
                     .padding()
@@ -27,7 +29,7 @@ struct LocationView: View {
             }
             .zIndex(2)
             if vm.showLocationList {
-               dimSquare
+                dimSquare
                     .zIndex(3)
             }
             if vm.showLocationList {
@@ -45,15 +47,9 @@ struct LocationView: View {
 
 extension LocationView {
     private var header: some View {
-        ZStack {
-            HStack {
-                Spacer()
-                MenuButtonView()
-            }
-            HStack {
-                SearchButtonView()
-                Spacer()
-            }
+        HStack {
+            SearchButtonView()
+            Spacer()
         }
     }
     
@@ -67,3 +63,4 @@ extension LocationView {
             }
     }
 }
+

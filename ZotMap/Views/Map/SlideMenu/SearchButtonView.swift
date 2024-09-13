@@ -17,6 +17,7 @@ struct SearchButtonView: View {
                 .frame(width: Constants().menuButtonWidth, height: Constants().menuButtonHeight)
                 .contentShape(RoundedRectangle(cornerRadius: 10))
         }
+        .frame(width: 45, height: 45)
         .background(.thickMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 15)

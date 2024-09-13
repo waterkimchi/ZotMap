@@ -32,7 +32,14 @@ class LocationViewModel: ObservableObject {
     
     @Published var showLocationList: Bool = false
     
-   
+    // Coordinate system
+    @Published var coordinates: [Coordinates] = []
+    
+    private let addresses = [
+        "S Circle View Dr Irvine, CA 92617 United States"
+        // Add more addresses here
+    ]
+    
     
     init() {
         let locations = LocationsDataService.locations
@@ -41,6 +48,7 @@ class LocationViewModel: ObservableObject {
         if let firstLocation = locations.first {
             self.updateMapRegion(location: firstLocation)
         }
+        fetchBuildingCoordinates()
     }
     
     private func updateMapRegion(location: Location) {
@@ -80,5 +88,25 @@ class LocationViewModel: ObservableObject {
             mapLocation = location
             showLocationList = false
         }
+    }
+    
+    func fetchBuildingCoordinates() {
+        let geocoder = CLGeocoder()
+        var fetchedBuildings: [Coordinates] = []
+        
+        for address in addresses {
+            geocoder.geocodeAddressString(address) { placemarks, error in
+                if error != nil {
+                    print(error ?? "There was an error")
+                } else if let placemark = placemarks?.first {
+                    let coordinate = placemark.location?.coordinate
+                    if let coord = coordinate {
+                        print("\nlat: \(coord.latitude), long: \(coord.longitude)")
+                        fetchedBuildings.append(Coordinates(name: address, coordinate: coord))
+                    }
+                }
+            }
+        }
+        self.coordinates = fetchedBuildings
     }
 }

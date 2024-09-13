@@ -18,7 +18,7 @@ struct CourseView: View {
         VStack {
             searchBar
             List {
-                ForEach(vm.filterCourses(contains: searchText)) { courses in
+                ForEach(vm.filterCoursesId(contains: searchText)) { courses in
                     HStack {
                         Text(courses.id)
                             .font(.custom("Montserrat-Bold", size: 12))
@@ -26,6 +26,7 @@ struct CourseView: View {
                     }
                 }
             }
+            
         }
     }
 }
@@ -36,6 +37,11 @@ struct CourseView: View {
 }
 
 extension CourseView {
+    
+    private var header: some View {
+        Text("COURSES")
+        
+    }
     
     private var searchBar: some View {
         ZStack {
