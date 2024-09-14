@@ -26,6 +26,8 @@
 		55735EEF2C93D8FC00D2B26A /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735EEE2C93D8FC00D2B26A /* LocationPreviewView.swift */; };
 		55735EF32C93E5BC00D2B26A /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735EF22C93E5BC00D2B26A /* Coordinates.swift */; };
 		557D44AE2C94F2CE00E4FF49 /* Buildings.json in Resources */ = {isa = PBXBuildFile; fileRef = 557D44AD2C94F2CE00E4FF49 /* Buildings.json */; };
+		557D44B12C95263000E4FF49 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D44B02C95263000E4FF49 /* Building.swift */; };
+		557D44B52C95279700E4FF49 /* BuildingsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D44B42C95279700E4FF49 /* BuildingsDataService.swift */; };
 		55A7243F2C92487C00243F2A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 554720282C9245EF007B0B64 /* Montserrat-Regular.ttf */; };
 		55A724412C92489A00243F2A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A724402C92489A00243F2A /* Montserrat-Bold.ttf */; };
 		55A724432C9248C500243F2A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A724422C9248C500243F2A /* Montserrat-SemiBold.ttf */; };
@@ -76,6 +78,8 @@
 		55735EEE2C93D8FC00D2B26A /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		55735EF22C93E5BC00D2B26A /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		557D44AD2C94F2CE00E4FF49 /* Buildings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Buildings.json; sourceTree = "<group>"; };
+		557D44B02C95263000E4FF49 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		557D44B42C95279700E4FF49 /* BuildingsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsDataService.swift; sourceTree = "<group>"; };
 		55A724402C92489A00243F2A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		55A724422C9248C500243F2A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		55A724442C9286FE00243F2A /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 				553F2C232C8D6ACD00483ABA /* ViewModels */,
 				553F2C212C8D6AC200483ABA /* Models */,
 				553F2C262C8D6C6400483ABA /* DataServices */,
+				557D44AF2C95260E00E4FF49 /* Raw Data */,
 				553F2BFB2C8D683C00483ABA /* Preview Content */,
 				553EF09C2C92B75F00887FD7 /* Util */,
 				55A7243E2C9247E900243F2A /* Fonts */,
@@ -194,6 +199,7 @@
 				553F2C242C8D6B3700483ABA /* Location.swift */,
 				55A724442C9286FE00243F2A /* CourseList.swift */,
 				55735EF22C93E5BC00D2B26A /* Coordinates.swift */,
+				557D44B02C95263000E4FF49 /* Building.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,9 +228,17 @@
 			children = (
 				553F2C272C8D6CA100483ABA /* LocationsDataService.swift */,
 				553EF09D2C92B80F00887FD7 /* CoursesDataService.swift */,
-				557D44AD2C94F2CE00E4FF49 /* Buildings.json */,
+				557D44B42C95279700E4FF49 /* BuildingsDataService.swift */,
 			);
 			path = DataServices;
+			sourceTree = "<group>";
+		};
+		557D44AF2C95260E00E4FF49 /* Raw Data */ = {
+			isa = PBXGroup;
+			children = (
+				557D44AD2C94F2CE00E4FF49 /* Buildings.json */,
+			);
+			path = "Raw Data";
 			sourceTree = "<group>";
 		};
 		55A7243E2C9247E900243F2A /* Fonts */ = {
@@ -396,9 +410,11 @@
 				553F2C2F2C8E51C200483ABA /* MenuButtonView.swift in Sources */,
 				553F2C2A2C8D6D6800483ABA /* LocationView.swift in Sources */,
 				55735EF32C93E5BC00D2B26A /* Coordinates.swift in Sources */,
+				557D44B12C95263000E4FF49 /* Building.swift in Sources */,
 				55A724452C9286FE00243F2A /* CourseList.swift in Sources */,
 				553F2C252C8D6B3700483ABA /* Location.swift in Sources */,
 				553F2C2C2C8D6D8C00483ABA /* LocationViewModel.swift in Sources */,
+				557D44B52C95279700E4FF49 /* BuildingsDataService.swift in Sources */,
 				551BA24C2C8FA867001713B7 /* SearchButtonView.swift in Sources */,
 				551BA24E2C8FB240001713B7 /* SlideMenuView.swift in Sources */,
 				55DC8E352C92D0B900FA03DD /* CourseViewModel.swift in Sources */,

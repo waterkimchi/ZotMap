@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct SlideMenuView: View {
     
@@ -94,6 +95,13 @@ extension SlideMenuView {
                     }
                 }
                 .listRowBackground(Color.accentBlue)
+            }
+            ForEach(vm.buildings) { building in
+                Button {
+                    vm.showNextLocation(location: Location(name: building.buildingName, cityName: "", coordinates: CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude), description: building.buildingCategory, imageNames: [""], link: ""))
+                } label: {
+                    Text(building.buildingName)
+                }
             }
         }
         .listStyle(.plain)

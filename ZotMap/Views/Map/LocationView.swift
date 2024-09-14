@@ -36,6 +36,7 @@ struct LocationView: View {
                 SlideMenuView()
                     .zIndex(4)
             }
+            
         }
     }
 }
