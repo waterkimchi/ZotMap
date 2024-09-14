@@ -8,7 +8,7 @@ This is an ongoing project and is not yet finalized for release. Please check ba
 
 ### Prerequisites
 
-S 13+ required, will be available in App store soon.
+iOS 15+ required, will be available in App store soon.
 
 ### Installing
 
