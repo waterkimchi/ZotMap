@@ -13,16 +13,16 @@ struct MenuButtonView: View {
     
     var body: some View {
         Menu {
-            ForEach(vm.coordinates) { coord in
+            ForEach(vm.buildingCategories(), id: \.self) { categories in
                 Button {
                     
-                }label: {
-                    Text(coord.name)
+                } label: {
+                    Text(categories)
                 }
             }
             
         } label: {
-            Image(systemName: "line.3.horizontal")
+            Image(systemName: "slider.horizontal.3")
                 .frame(height: Constants().menuButtonHeight)
                 .frame(maxWidth: Constants().menuButtonWidth)
         }

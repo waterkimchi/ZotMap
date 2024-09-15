@@ -12,37 +12,33 @@ import Combine
 
 class LocationViewModel: ObservableObject {
     
-    // All loaded locations
-    @Published var locations: [Location]
-    
     // Current location on map
     @Published var mapLocation: Location {
         didSet {
             updateMapRegion(location: mapLocation)
         }
     }
-    
     // Curent region on map
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
-    
     // camera position of current map region
     @Published var mapCamera: MapCameraPosition = .automatic
     
     
+    // Locations
+    @Published var locations: [Location]
     @Published var showLocationList: Bool = false
     
-    // Coordinate system
+    // Coordinates
     @Published var coordinates: [Coordinates] = []
     
     
-    // buildings
+    // Buildings
     @Published var buildings: [Building] = []
     private var cancellables = Set<AnyCancellable>()
     
     
     init() {
-        
         // locations init
         let locations = LocationsDataService.locations
         self.locations = locations
@@ -96,5 +92,15 @@ class LocationViewModel: ObservableObject {
             mapLocation = location
             showLocationList = false
         }
+    }
+    
+    public func buildingCategories() -> [String] {
+        var buildingCategories: [String] = []
+        for building in buildings {
+            if !buildingCategories.contains(building.buildingCategory) {
+                buildingCategories.append(building.buildingCategory)
+            }
+        }
+        return buildingCategories
     }
 }
