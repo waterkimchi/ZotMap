@@ -17,9 +17,13 @@ struct LocationView: View {
     var body: some View {
         ZStack {
             Map(position: $vm.mapCamera) {
-                
+                UserAnnotation()
+                ForEach(vm.buildings) { building in
+                    Marker(building.buildingName, coordinate: CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude))
+                }
             }
             .mapStyle(mapStyleSelect)
+            
             
             .zIndex(1)
             VStack(spacing: 0) {
