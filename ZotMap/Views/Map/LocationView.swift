@@ -35,8 +35,6 @@ struct LocationView: View {
             .onAppear {
                 manager.requestWhenInUseAuthorization()
             }
-    
-            
             .zIndex(1)
             VStack(spacing: 0) {
                 if !vm.showLocationList {
