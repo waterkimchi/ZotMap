@@ -14,7 +14,9 @@ iOS 15+ required, will be available in App store soon.
 
 Link will be updated for the iOS app on App Store.
 
-Installing the development environment:
+App Store link: TBD
+
+Development installing:
 
 1. download latest Xcode and make sure Xcode tools is installed.
 ```
