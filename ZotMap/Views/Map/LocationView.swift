@@ -14,14 +14,27 @@ struct LocationView: View {
     
     @State private var mapStyleSelect: MapStyle = .standard(elevation: .realistic)
     
+    let manager = CLLocationManager()
+    
     var body: some View {
         ZStack {
             Map(position: $vm.mapCamera) {
+                UserAnnotation()
                 ForEach(vm.buildings) { building in
-                    Marker(building.buildingName, coordinate: CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude))
+                    Annotation(building.buildingName, coordinate: CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude)) {
+                        ZStack {
+                            Circle()
+                                .foregroundColor(.blue)
+                                .frame(width: 6, height: 6)
+                        }
+                    }
+                        
                 }
             }
             .mapStyle(mapStyleSelect)
+            .onAppear {
+                manager.requestWhenInUseAuthorization()
+            }
     
             
             .zIndex(1)

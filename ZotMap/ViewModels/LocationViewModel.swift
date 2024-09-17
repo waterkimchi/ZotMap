@@ -12,15 +12,17 @@ import Combine
 
 class LocationViewModel: ObservableObject {
     
+    let defaultMapSpan = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+    
     // Current location on map
     @Published var mapLocation: Location {
         didSet {
-            updateMapRegion(location: mapLocation)
+            updateMapRegion(location: mapLocation, mapSpan: defaultMapSpan)
         }
     }
     // Curent region on map
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
-    let mapSpan = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
+    let startSpan = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
     // camera position of current map region
     @Published var mapCamera: MapCameraPosition = .automatic
     
@@ -44,7 +46,7 @@ class LocationViewModel: ObservableObject {
         self.locations = locations
         self.mapLocation = locations.first!
         if let firstLocation = locations.first {
-            self.updateMapRegion(location: firstLocation)
+            self.updateMapRegion(location: firstLocation, mapSpan: startSpan)
         }
         
         // buildings init
@@ -55,7 +57,7 @@ class LocationViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    private func updateMapRegion(location: Location) {
+    private func updateMapRegion(location: Location, mapSpan: MKCoordinateSpan) {
         withAnimation(.easeInOut) {
             mapRegion = MKCoordinateRegion(
                 center: location.coordinates,
