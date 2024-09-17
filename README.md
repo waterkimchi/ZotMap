@@ -8,7 +8,7 @@ This is an ongoing project and is not yet finalized for release. Please check ba
 
 ### Prerequisites
 
-iOS 15+ required, will be available in App store soon.
+Not tested.
 
 ### Installing
 
@@ -30,7 +30,7 @@ git clone "https://github.com/waterkimchi/ZotMap.git"
 
 ## Built With
 
-* [MapKit](https://developer.apple.com/documentation/mapkit/) - MapKit provided by iOS 15 update, used for overall map design.
+* [MapKit](https://developer.apple.com/documentation/mapkit/) - MapKit provided by iOS 17 update, used for overall map design.
 * [UCI Map](https://map.uci.edu/?id=463#!s/) - Map reference used for various structures and buildings around campus.
 * [PeterPortal](https://api.peterportal.org) - Course list API, modified to include coordinate data
 * Xcode(SwiftUI) - Swift and Xcode has been used for this project.
