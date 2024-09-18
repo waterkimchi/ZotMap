@@ -12,7 +12,7 @@ import Combine
 
 class LocationViewModel: ObservableObject {
     
-    let defaultMapSpan = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+    let defaultMapSpan = MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003)
     
     // Current location on map
     @Published var mapLocation: Building {
@@ -34,6 +34,7 @@ class LocationViewModel: ObservableObject {
     @Published var buildings: [Building] = []
     private var cancellables = Set<AnyCancellable>()
     
+    @Published var filteredCategories: [String] = []
     
     init() {
         // locations init
@@ -86,6 +87,34 @@ class LocationViewModel: ObservableObject {
         }
     }
     
+    
+    // filter category based on published variable
+    public func filterCategoryBuildings() -> [Building] {
+        var resBuilding: [Building] = []
+        if !filteredCategories.isEmpty {
+            for building in buildings {
+                for filter in filteredCategories {
+                    if building.buildingCategory.contains(filter) {
+                        resBuilding.append(building)
+                    }
+                }
+            }
+        } else {
+            return buildings
+        }
+        return resBuilding
+    }
+    
+    public func toggleCategoryFilter(category: String) {
+        for filter in filteredCategories {
+            if(filter == category) {
+                filteredCategories.remove(at: filteredCategories.firstIndex(of: filter)!)
+                return
+            }
+        }
+        filteredCategories.append(category)
+    }
+    
     public func showNextBuilding(building: Building) {
         withAnimation(.easeInOut) {
             mapLocation = building
@@ -94,12 +123,40 @@ class LocationViewModel: ObservableObject {
     }
     
     public func buildingCategories() -> [String] {
+        
+        //include all buildings that is not repetitive in category
         var buildingCategories: [String] = []
         for building in buildings {
-            if !buildingCategories.contains(building.buildingCategory) {
-                buildingCategories.append(building.buildingCategory)
+            // split elements with " + "
+            let categories = building.buildingCategory.split(separator: "+").map { $0.trimmingCharacters(in: .whitespaces) }
+            for cat in categories {
+                if !buildingCategories.contains(cat) {
+                    buildingCategories.append(cat)
+                }
             }
         }
+        buildingCategories.sort(by: < )
         return buildingCategories
+    }
+    
+    func nextButtonPressed() {
+        
+        // get the current index
+        guard let currentIndex = buildings.firstIndex(where: { $0 == mapLocation }) else {
+            print("Could not find current index in lcoaitons array! Should never happen.")
+            return
+        }
+        
+        // check if nextIndex is valid
+        let nextIndex = currentIndex + 1
+        guard nextIndex < buildings.count else {
+            // go back to first index
+            guard let firstBuilding = buildings.first else { return }
+            showNextBuilding(building: firstBuilding)
+            return
+        }
+        
+        // move to next location
+        showNextBuilding(building: buildings[nextIndex])
     }
 }

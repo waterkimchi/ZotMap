@@ -13,12 +13,17 @@ struct MenuButtonView: View {
     
     var body: some View {
         Menu {
-            ForEach(vm.buildingCategories(), id: \.self) { categories in
+            ForEach(vm.buildingCategories(), id: \.self) { category in
                 Button {
-                    
+                    vm.toggleCategoryFilter(category: category)
                 } label: {
-                    Text(categories)
+                    if vm.filteredCategories.contains(category) {
+                        Label(category, systemImage: "checkmark")
+                    } else {
+                        Text(category)
+                    }
                 }
+                .menuActionDismissBehavior(.disabled)
             }
             
         } label: {

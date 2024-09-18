@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LocationPreviewView: View {
     
+    @EnvironmentObject private var vm: LocationViewModel
+    
     let building: Building
     
     var body: some View {
@@ -17,29 +19,8 @@ struct LocationPreviewView: View {
                 titleSection
             }
             VStack {
-                Button {
-                    
-                } label: {
-                    Text("Details")
-                        .font(.custom("Montserrat-Bold", size: 18))
-                        .frame(width: 100, height: 35)
-                }
-                .background(.accentYellow)
-                .foregroundStyle(.accentBlue)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-                .buttonStyle(.bordered)
-                
-                Button {
-                    
-                } label: {
-                    Text("Next")
-                        .font(.custom("Montserrat-Bold", size: 18))
-                        .frame(width: 100, height: 35)
-                }
-                .background(.accentYellow)
-                .foregroundStyle(.accentBlue)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-                .buttonStyle(.bordered)
+                detailsButton
+                nextButton
             }
         }
         .padding(20)
@@ -60,13 +41,46 @@ struct LocationPreviewView: View {
 extension LocationPreviewView {
     
     private var titleSection: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            Text(building.buildingName)
-                .font(.custom("Montserrat-Bold", size: 20))
-            
-            Text(building.buildingCategory)
-                .font(.subheadline)
+        Button {
+            vm.showNextBuilding(building: building)
+        } label: {
+            VStack(alignment: .leading, spacing: 5) {
+                Text(building.buildingName)
+                    .font(.custom("Montserrat-Bold", size: 20))
+                
+                Text(building.buildingCategory)
+                    .font(.subheadline)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .foregroundStyle(.white)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private var detailsButton: some View {
+        Button {
+            
+        } label: {
+            Text("Details")
+                .font(.custom("Montserrat-Bold", size: 18))
+                .frame(width: 100, height: 35)
+        }
+        .background(.accentYellow)
+        .foregroundStyle(.accentBlue)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .buttonStyle(.bordered)
+    }
+    
+    private var nextButton: some View {
+        Button {
+            vm.nextButtonPressed()
+        } label: {
+            Text("Next")
+                .font(.custom("Montserrat-Bold", size: 18))
+                .frame(width: 100, height: 35)
+        }
+        .background(.accentYellow)
+        .foregroundStyle(.accentBlue)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .buttonStyle(.bordered)
     }
 }
