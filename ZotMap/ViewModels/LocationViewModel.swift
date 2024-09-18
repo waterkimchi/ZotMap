@@ -15,7 +15,7 @@ class LocationViewModel: ObservableObject {
     let defaultMapSpan = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
     
     // Current location on map
-    @Published var mapLocation: Location {
+    @Published var mapLocation: Building {
         didSet {
             updateMapRegion(location: mapLocation, mapSpan: defaultMapSpan)
         }
@@ -28,12 +28,7 @@ class LocationViewModel: ObservableObject {
     
     
     // Locations
-    @Published var locations: [Location]
     @Published var showLocationList: Bool = false
-    
-    // Coordinates
-    @Published var coordinates: [Coordinates] = []
-    
     
     // Buildings
     @Published var buildings: [Building] = []
@@ -42,10 +37,8 @@ class LocationViewModel: ObservableObject {
     
     init() {
         // locations init
-        let locations = LocationsDataService.locations
-        self.locations = locations
-        self.mapLocation = locations.first!
-        if let firstLocation = locations.first {
+        self.mapLocation = Building(buildingName: "University of California, Irvine", buildingCategory: "School", latitude: 33.6424, longitude: -117.8417)
+        if let firstLocation = buildings.first {
             self.updateMapRegion(location: firstLocation, mapSpan: startSpan)
         }
         
@@ -57,10 +50,15 @@ class LocationViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    private func updateMapRegion(location: Location, mapSpan: MKCoordinateSpan) {
+    private func buildingCoordinates(building: Building) -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude)
+    }
+    
+    // updates the viewing region span
+    private func updateMapRegion(location: Building, mapSpan: MKCoordinateSpan) {
         withAnimation(.easeInOut) {
             mapRegion = MKCoordinateRegion(
-                center: location.coordinates,
+                center: buildingCoordinates(building: location),
                 span: mapSpan)
             mapCamera = .region(mapRegion)
         }
@@ -72,26 +70,26 @@ class LocationViewModel: ObservableObject {
         }
     }
     
-    public func filterLocations(contains: String) -> [Location]{
+    
+    public func filterBuildings(contains: String) -> [Building] {
         if contains.isEmpty {
-            return locations
+            return buildings
         } else {
-            
             let str = contains.lowercased()
-            var searchedLoc: [Location] = []
+            var searchedBuild: [Building] = []
             
-            for loc in locations {
-                if loc.name.lowercased().contains(str) || loc.cityName.lowercased().contains(str) {
-                    searchedLoc.append(loc)
+            for bld in buildings {
+                if bld.buildingName.lowercased().contains(str) || bld.buildingCategory.lowercased().contains(str) {
+                    searchedBuild.append(bld)
                 }
             }
-            return searchedLoc
+            return searchedBuild
         }
     }
     
-    public func showNextLocation(location: Location) {
+    public func showNextBuilding(building: Building) {
         withAnimation(.easeInOut) {
-            mapLocation = location
+            mapLocation = building
             showLocationList = false
         }
     }
