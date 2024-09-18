@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Building: Identifiable, Codable {
+struct Building: Identifiable, Codable, Equatable {
     let buildingName: String
     let buildingCategory: String
     let latitude: Double

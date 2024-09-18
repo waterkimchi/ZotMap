@@ -28,7 +28,6 @@ struct LocationView: View {
                                 .frame(width: 6, height: 6)
                         }
                     }
-                        
                 }
             }
             .mapStyle(mapStyleSelect)
@@ -46,11 +45,24 @@ struct LocationView: View {
             .zIndex(2)
             if vm.showLocationList {
                 dimSquare
-                    .zIndex(3)
-            }
-            if vm.showLocationList {
-                SlideMenuView()
                     .zIndex(4)
+                SlideMenuView()
+                    .zIndex(5)
+            } else {
+                VStack(spacing: 0) {
+                    Spacer()
+                    ZStack {
+                        ForEach(vm.buildings) { building in
+                            if vm.mapLocation == building {
+                                LocationPreviewView(building: building)
+                                    .shadow(color: Color.black.opacity(0.3), radius: 20)
+                                    .padding()
+                                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                            }
+                        }
+                    }
+                }
+                .zIndex(3)
             }
             
         }
