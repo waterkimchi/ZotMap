@@ -21,7 +21,7 @@ struct LocationView: View {
             Map(position: $vm.mapCamera) {
                 UserAnnotation()
                 ForEach(vm.buildings) { building in
-                    Annotation(building.buildingName, coordinate: CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude)) {
+                    Annotation(building.buildingName, coordinate: vm.buildingCoordinates(building: building)) {
                         ZStack {
                             Circle()
                                 .foregroundColor(.blue)

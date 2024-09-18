@@ -50,7 +50,7 @@ class LocationViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    private func buildingCoordinates(building: Building) -> CLLocationCoordinate2D {
+    public  func buildingCoordinates(building: Building) -> CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude)
     }
     
