@@ -71,37 +71,30 @@ extension SlideMenuView {
     
     private var locationList: some View {
         List {
-            ForEach(vm.filterLocations(contains: searchText)) { locations in
+            ForEach(vm.filterBuildings(contains: searchText)) { building in
                 Button {
-                    vm.showNextLocation(location: locations)
+                    vm.showNextBuilding(building: building)
                 } label: {
                     HStack {
-                        if let imageName = locations.imageNames.first {
-                            Image(imageName)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 45, height: 45)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
-                        }
+//                        if let imageName = building.imageNames.first {
+//                            Image(imageName)
+//                                .resizable()
+//                                .scaledToFill()
+//                                .frame(width: 45, height: 45)
+//                                .clipShape(RoundedRectangle(cornerRadius: 10))
+//                        }
                         
                         VStack(alignment: .leading) {
-                            Text(locations.name)
+                            Text(building.buildingName)
                                 .font(.custom("Montserrat-SemiBold", size: 20))
                                 .foregroundStyle(.accentYellow)
-                            Text(locations.cityName)
+                            Text(building.buildingCategory)
                                 .font(.custom("Montserrat-Regular", size: 16))
                                 .foregroundStyle(.white)
                         }
                     }
                 }
                 .listRowBackground(Color.accentBlue)
-            }
-            ForEach(vm.buildings) { building in
-                Button {
-                    vm.showNextLocation(location: Location(name: building.buildingName, cityName: "", coordinates: CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude), description: building.buildingCategory, imageNames: [""], link: ""))
-                } label: {
-                    Text(building.buildingName)
-                }
             }
         }
         .listStyle(.plain)

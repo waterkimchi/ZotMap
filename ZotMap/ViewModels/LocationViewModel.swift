@@ -70,7 +70,6 @@ class LocationViewModel: ObservableObject {
         }
     }
     
-    
     public func filterBuildings(contains: String) -> [Building] {
         if contains.isEmpty {
             return buildings
