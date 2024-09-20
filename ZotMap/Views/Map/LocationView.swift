@@ -58,11 +58,38 @@ extension LocationView {
         Map(position: $vm.mapCamera) {
             UserAnnotation()
             ForEach(vm.filterCategoryBuildings()) { building in
-                Annotation(building.buildingName, coordinate: vm.buildingCoordinates(building: building)) {
-                    ZStack {
-                        Circle()
-                            .foregroundColor(.blue)
-                            .frame(width: 6, height: 6)
+                Annotation(coordinate: vm.buildingCoordinates(building: building)) {
+                    Button {
+                        vm.showNextBuilding(building: building)
+                    } label: {
+                        ZStack {
+                            if vm.mapLocation == building {
+                                VStack {
+                                    MapAnnotationView()
+                                    Text(building.buildingName)
+                                        .font(.custom("Montserrat-Bold", size: 17))
+                                    // Text color based on light/dark mode
+                                        .foregroundStyle(.accentText)
+                                    
+                                        .offset(y: -10)
+                                        .frame(width: 250)
+                                }
+                            }
+                            // small marker
+                            Circle()
+                                .foregroundStyle(.accentYellow)
+                                .frame(width: 6, height: 6)
+                            
+                            // invisible circle to enhance touch response on markers
+                            Circle()
+                                .opacity(0)
+                                .frame(width: 30, height: 30)
+                        }
+                        
+                    }
+                } label: {
+                    if vm.mapLocation != building {
+                        Text(building.buildingName)
                     }
                 }
             }
