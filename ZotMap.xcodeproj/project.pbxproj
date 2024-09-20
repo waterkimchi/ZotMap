@@ -29,6 +29,7 @@
 		557D44B12C95263000E4FF49 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D44B02C95263000E4FF49 /* Building.swift */; };
 		557D44B52C95279700E4FF49 /* BuildingsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D44B42C95279700E4FF49 /* BuildingsDataService.swift */; };
 		558B47F72C9D358900F0B72A /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B47F62C9D358900F0B72A /* MapAnnotationView.swift */; };
+		558B47FA2C9D442B00F0B72A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B47F92C9D442B00F0B72A /* MapView.swift */; };
 		55A7243F2C92487C00243F2A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 554720282C9245EF007B0B64 /* Montserrat-Regular.ttf */; };
 		55A724412C92489A00243F2A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A724402C92489A00243F2A /* Montserrat-Bold.ttf */; };
 		55A724432C9248C500243F2A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A724422C9248C500243F2A /* Montserrat-SemiBold.ttf */; };
@@ -82,6 +83,7 @@
 		557D44B02C95263000E4FF49 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		557D44B42C95279700E4FF49 /* BuildingsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsDataService.swift; sourceTree = "<group>"; };
 		558B47F62C9D358900F0B72A /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		558B47F92C9D442B00F0B72A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		55A724402C92489A00243F2A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		55A724422C9248C500243F2A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		55A724442C9286FE00243F2A /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
@@ -115,12 +117,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5514966C2C9BFCEB004669FC /* MapPins */ = {
+		5514966C2C9BFCEB004669FC /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				558B47F92C9D442B00F0B72A /* MapView.swift */,
 				558B47F62C9D358900F0B72A /* MapAnnotationView.swift */,
 			);
-			path = MapPins;
+			path = Map;
 			sourceTree = "<group>";
 		};
 		551BA24F2C8FB6AD001713B7 /* SlideMenu */ = {
@@ -251,6 +254,15 @@
 			path = "Raw Data";
 			sourceTree = "<group>";
 		};
+		558B47FB2C9D44D100F0B72A /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				553F2C2E2C8E51C200483ABA /* MenuButtonView.swift */,
+				55735EEE2C93D8FC00D2B26A /* LocationPreviewView.swift */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
 		55A7243E2C9247E900243F2A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,9 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				553F2C292C8D6D6800483ABA /* LocationView.swift */,
-				553F2C2E2C8E51C200483ABA /* MenuButtonView.swift */,
-				55735EEE2C93D8FC00D2B26A /* LocationPreviewView.swift */,
-				5514966C2C9BFCEB004669FC /* MapPins */,
+				5514966C2C9BFCEB004669FC /* Map */,
+				558B47FB2C9D44D100F0B72A /* HUD */,
 				551BA24F2C8FB6AD001713B7 /* SlideMenu */,
 			);
 			path = Map;
@@ -433,6 +444,7 @@
 				553F2C282C8D6CA100483ABA /* LocationsDataService.swift in Sources */,
 				55A7244F2C928FD400243F2A /* CourseView.swift in Sources */,
 				55735EEF2C93D8FC00D2B26A /* LocationPreviewView.swift in Sources */,
+				558B47FA2C9D442B00F0B72A /* MapView.swift in Sources */,
 				553EF09E2C92B80F00887FD7 /* CoursesDataService.swift in Sources */,
 				558B47F72C9D358900F0B72A /* MapAnnotationView.swift in Sources */,
 			);

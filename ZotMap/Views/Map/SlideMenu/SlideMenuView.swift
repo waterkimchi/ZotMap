@@ -76,14 +76,6 @@ extension SlideMenuView {
                     vm.showNextBuilding(building: building)
                 } label: {
                     HStack {
-//                        if let imageName = building.imageNames.first {
-//                            Image(imageName)
-//                                .resizable()
-//                                .scaledToFill()
-//                                .frame(width: 45, height: 45)
-//                                .clipShape(RoundedRectangle(cornerRadius: 10))
-//                        }
-                        
                         VStack(alignment: .leading) {
                             Text(building.buildingName)
                                 .font(.custom("Montserrat-SemiBold", size: 20))
@@ -118,6 +110,9 @@ extension SlideMenuView {
                     .autocorrectionDisabled()
                     .textFieldStyle(.plain)
                     .searchable(text: $searchText, isPresented: $searchIsActive)
+                    .onSubmit {
+                        
+                    }
                 
                 
                 Spacer(minLength: 25)

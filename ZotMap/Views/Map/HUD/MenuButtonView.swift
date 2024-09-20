@@ -13,17 +13,24 @@ struct MenuButtonView: View {
     
     var body: some View {
         Menu {
-            ForEach(vm.buildingCategories(), id: \.self) { category in
-                Button {
-                    vm.toggleCategoryFilter(category: category)
-                } label: {
-                    if vm.filteredCategories.contains(category) {
-                        Label(category, systemImage: "checkmark")
-                    } else {
-                        Text(category)
-                    }
+            Section {
+                Button("Show All") {
+                    vm.filteredCategories.removeAll()
                 }
-                .menuActionDismissBehavior(.disabled)
+            }
+            Section {
+                ForEach(vm.buildingCategories(), id: \.self) { category in
+                    Button {
+                        vm.toggleCategoryFilter(category: category)
+                    } label: {
+                        if vm.filteredCategories.contains(category) {
+                            Label(category, systemImage: "checkmark")
+                        } else {
+                            Text(category)
+                        }
+                    }
+                    .menuActionDismissBehavior(.disabled)
+                }
             }
             
         } label: {

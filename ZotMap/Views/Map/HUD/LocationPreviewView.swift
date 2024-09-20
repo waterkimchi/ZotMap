@@ -44,6 +44,7 @@ extension LocationPreviewView {
             VStack(alignment: .leading, spacing: 5) {
                 Text(building.buildingName)
                     .font(.custom("Montserrat-Bold", size: 20))
+                    .multilineTextAlignment(.leading)
                 
                 Text(building.buildingCategory)
                     .font(.subheadline)
