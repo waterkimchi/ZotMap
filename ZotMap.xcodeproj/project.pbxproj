@@ -28,6 +28,7 @@
 		557D44AE2C94F2CE00E4FF49 /* Buildings.json in Resources */ = {isa = PBXBuildFile; fileRef = 557D44AD2C94F2CE00E4FF49 /* Buildings.json */; };
 		557D44B12C95263000E4FF49 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D44B02C95263000E4FF49 /* Building.swift */; };
 		557D44B52C95279700E4FF49 /* BuildingsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D44B42C95279700E4FF49 /* BuildingsDataService.swift */; };
+		558B47F72C9D358900F0B72A /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B47F62C9D358900F0B72A /* MapAnnotationView.swift */; };
 		55A7243F2C92487C00243F2A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 554720282C9245EF007B0B64 /* Montserrat-Regular.ttf */; };
 		55A724412C92489A00243F2A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A724402C92489A00243F2A /* Montserrat-Bold.ttf */; };
 		55A724432C9248C500243F2A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A724422C9248C500243F2A /* Montserrat-SemiBold.ttf */; };
@@ -80,6 +81,7 @@
 		557D44AD2C94F2CE00E4FF49 /* Buildings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Buildings.json; sourceTree = "<group>"; };
 		557D44B02C95263000E4FF49 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		557D44B42C95279700E4FF49 /* BuildingsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsDataService.swift; sourceTree = "<group>"; };
+		558B47F62C9D358900F0B72A /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		55A724402C92489A00243F2A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		55A724422C9248C500243F2A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		55A724442C9286FE00243F2A /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5514966C2C9BFCEB004669FC /* MapPins */ = {
+			isa = PBXGroup;
+			children = (
+				558B47F62C9D358900F0B72A /* MapAnnotationView.swift */,
+			);
+			path = MapPins;
+			sourceTree = "<group>";
+		};
 		551BA24F2C8FB6AD001713B7 /* SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +267,7 @@
 				553F2C292C8D6D6800483ABA /* LocationView.swift */,
 				553F2C2E2C8E51C200483ABA /* MenuButtonView.swift */,
 				55735EEE2C93D8FC00D2B26A /* LocationPreviewView.swift */,
+				5514966C2C9BFCEB004669FC /* MapPins */,
 				551BA24F2C8FB6AD001713B7 /* SlideMenu */,
 			);
 			path = Map;
@@ -334,7 +345,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					553F2BEF2C8D683B00483ABA = {
 						CreatedOnToolsVersion = 15.4;
@@ -423,6 +434,7 @@
 				55A7244F2C928FD400243F2A /* CourseView.swift in Sources */,
 				55735EEF2C93D8FC00D2B26A /* LocationPreviewView.swift in Sources */,
 				553EF09E2C92B80F00887FD7 /* CoursesDataService.swift in Sources */,
+				558B47F72C9D358900F0B72A /* MapAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,7 +657,6 @@
 		553F2C1A2C8D683C00483ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -665,7 +676,6 @@
 		553F2C1B2C8D683C00483ABA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -685,7 +695,6 @@
 		553F2C1D2C8D683C00483ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q4GZ52K957;
@@ -703,7 +712,6 @@
 		553F2C1E2C8D683C00483ABA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q4GZ52K957;

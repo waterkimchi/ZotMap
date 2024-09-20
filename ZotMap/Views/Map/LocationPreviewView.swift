@@ -18,10 +18,7 @@ struct LocationPreviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 titleSection
             }
-            VStack {
-                detailsButton
-                nextButton
-            }
+            detailsButton
         }
         .padding(20)
         .background(
@@ -61,20 +58,6 @@ extension LocationPreviewView {
             
         } label: {
             Text("Details")
-                .font(.custom("Montserrat-Bold", size: 18))
-                .frame(width: 100, height: 35)
-        }
-        .background(.accentYellow)
-        .foregroundStyle(.accentBlue)
-        .clipShape(RoundedRectangle(cornerRadius: 10))
-        .buttonStyle(.bordered)
-    }
-    
-    private var nextButton: some View {
-        Button {
-            vm.nextButtonPressed()
-        } label: {
-            Text("Next")
                 .font(.custom("Montserrat-Bold", size: 18))
                 .frame(width: 100, height: 35)
         }

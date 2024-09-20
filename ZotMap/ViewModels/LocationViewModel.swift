@@ -139,7 +139,7 @@ class LocationViewModel: ObservableObject {
         return buildingCategories
     }
     
-    func nextButtonPressed() {
+    func nextIndexPressed(index: Int) {
         
         // get the current index
         guard let currentIndex = buildings.firstIndex(where: { $0 == mapLocation }) else {
@@ -148,7 +148,12 @@ class LocationViewModel: ObservableObject {
         }
         
         // check if nextIndex is valid
-        let nextIndex = currentIndex + 1
+        let nextIndex = currentIndex + index
+        guard nextIndex >= 0 else {
+            guard let lastBuilding = buildings.last else { return }
+            showNextBuilding(building: lastBuilding)
+            return
+        }
         guard nextIndex < buildings.count else {
             // go back to first index
             guard let firstBuilding = buildings.first else { return }
