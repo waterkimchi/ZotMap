@@ -71,7 +71,7 @@ extension SlideMenuView {
     
     private var locationList: some View {
         List {
-            ForEach(vm.filterBuildings(contains: searchText)) { building in
+            ForEach(vm.filterBuildings(contains: searchText, showWhenEmpty: true)) { building in
                 Button {
                     vm.showNextBuilding(building: building)
                 } label: {
@@ -110,11 +110,6 @@ extension SlideMenuView {
                     .autocorrectionDisabled()
                     .textFieldStyle(.plain)
                     .searchable(text: $searchText, isPresented: $searchIsActive)
-                    .onSubmit {
-                        
-                    }
-                
-                
                 Spacer(minLength: 25)
             }
         }

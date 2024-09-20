@@ -20,6 +20,7 @@ class LocationViewModel: ObservableObject {
             updateMapRegion(location: mapLocation, mapSpan: defaultMapSpan)
         }
     }
+    @Published var showAnnotationSelected: Bool = false
     // Curent region on map
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let startSpan = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
@@ -36,9 +37,11 @@ class LocationViewModel: ObservableObject {
     
     @Published var filteredCategories: [String] = []
     
+    private var defaultLocation: Building = Building(buildingName: "University of California, Irvine", buildingCategory: "School", latitude: 33.6424, longitude: -117.8417)
+    
     init() {
         // locations init
-        self.mapLocation = Building(buildingName: "University of California, Irvine", buildingCategory: "School", latitude: 33.6424, longitude: -117.8417)
+        self.mapLocation = defaultLocation
         if let firstLocation = buildings.first {
             self.updateMapRegion(location: firstLocation, mapSpan: startSpan)
         }
@@ -74,16 +77,20 @@ class LocationViewModel: ObservableObject {
     }
     
     // add categories to the filteredCategories array
-    public func filterBuildings(contains: String) -> [Building] {
-        let str = contains.lowercased()
-        var searchedBuild: [Building] = []
-        
-        for bld in buildings {
-            if bld.buildingName.lowercased().contains(str) || bld.buildingCategory.lowercased().contains(str) {
-                searchedBuild.append(bld)
+    public func filterBuildings(contains: String, showWhenEmpty: Bool) -> [Building] {
+        if contains.isEmpty && showWhenEmpty {
+            return buildings
+        } else {
+            let str = contains.lowercased()
+            var searchedBuild: [Building] = []
+            
+            for bld in buildings {
+                if bld.buildingName.lowercased().contains(str) || bld.buildingCategory.lowercased().contains(str) {
+                    searchedBuild.append(bld)
+                }
             }
+            return searchedBuild
         }
-        return searchedBuild
     }
     
     
@@ -125,6 +132,7 @@ class LocationViewModel: ObservableObject {
     // move camera map lcoation to parameter building
     public func showNextBuilding(building: Building) {
         withAnimation(.easeInOut) {
+            showAnnotationSelected = true
             mapLocation = building
             showLocationList = false
         }
