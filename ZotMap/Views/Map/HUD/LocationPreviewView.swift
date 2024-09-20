@@ -43,11 +43,12 @@ extension LocationPreviewView {
         } label: {
             VStack(alignment: .leading, spacing: 5) {
                 Text(building.buildingName)
-                    .font(.custom("Montserrat-Bold", size: 20))
+                    .font(.custom("Montserrat-Bold", size: 16))
                     .multilineTextAlignment(.leading)
                 
                 Text(building.buildingCategory)
-                    .font(.subheadline)
+                    .font(.custom("Montserrat-Regular", size: 12))
+                    .multilineTextAlignment(.leading)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .foregroundStyle(.white)
@@ -59,8 +60,8 @@ extension LocationPreviewView {
             
         } label: {
             Text("Details")
-                .font(.custom("Montserrat-Bold", size: 18))
-                .frame(width: 100, height: 35)
+                .font(.custom("Montserrat-Bold", size: 16))
+                .frame(width: 80, height: 35)
         }
         .background(.accentYellow)
         .foregroundStyle(.accentBlue)

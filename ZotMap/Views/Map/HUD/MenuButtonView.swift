@@ -15,6 +15,9 @@ struct MenuButtonView: View {
         Menu {
             Section {
                 Button("Show All") {
+                    vm.showAllLocations()
+                }
+                Button("Remove Filter") {
                     vm.filteredCategories.removeAll()
                 }
             }

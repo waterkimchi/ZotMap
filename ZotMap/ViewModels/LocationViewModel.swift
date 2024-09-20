@@ -49,9 +49,11 @@ class LocationViewModel: ObservableObject {
                 self?.buildings = returnCourses
             }
             .store(in: &cancellables)
+        
+        showAllLocations()
     }
     
-    public  func buildingCoordinates(building: Building) -> CLLocationCoordinate2D {
+    public func buildingCoordinates(building: Building) -> CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude)
     }
     
@@ -71,20 +73,17 @@ class LocationViewModel: ObservableObject {
         }
     }
     
+    // add categories to the filteredCategories array
     public func filterBuildings(contains: String) -> [Building] {
-        if contains.isEmpty {
-            return buildings
-        } else {
-            let str = contains.lowercased()
-            var searchedBuild: [Building] = []
-            
-            for bld in buildings {
-                if bld.buildingName.lowercased().contains(str) || bld.buildingCategory.lowercased().contains(str) {
-                    searchedBuild.append(bld)
-                }
+        let str = contains.lowercased()
+        var searchedBuild: [Building] = []
+        
+        for bld in buildings {
+            if bld.buildingName.lowercased().contains(str) || bld.buildingCategory.lowercased().contains(str) {
+                searchedBuild.append(bld)
             }
-            return searchedBuild
         }
+        return searchedBuild
     }
     
     
@@ -100,10 +99,18 @@ class LocationViewModel: ObservableObject {
                 }
             }
         } else {
-            return buildings
+            return resBuilding
         }
         return resBuilding
     }
+    
+    // show all locations by adding all categories in the filtedCategories array
+    public func showAllLocations() {
+        for category in buildingCategories() {
+            filteredCategories.append(category)
+        }
+    }
+    
     
     public func toggleCategoryFilter(category: String) {
         for filter in filteredCategories {
@@ -115,6 +122,7 @@ class LocationViewModel: ObservableObject {
         filteredCategories.append(category)
     }
     
+    // move camera map lcoation to parameter building
     public func showNextBuilding(building: Building) {
         withAnimation(.easeInOut) {
             mapLocation = building
@@ -122,8 +130,8 @@ class LocationViewModel: ObservableObject {
         }
     }
     
+    // return all building categories in an array
     public func buildingCategories() -> [String] {
-        
         //include all buildings that is not repetitive in category
         var buildingCategories: [String] = []
         for building in buildings {
@@ -137,31 +145,5 @@ class LocationViewModel: ObservableObject {
         }
         buildingCategories.sort(by: < )
         return buildingCategories
-    }
-    
-    func nextIndexPressed(index: Int) {
-        
-        // get the current index
-        guard let currentIndex = buildings.firstIndex(where: { $0 == mapLocation }) else {
-            print("Could not find current index in lcoaitons array! Should never happen.")
-            return
-        }
-        
-        // check if nextIndex is valid
-        let nextIndex = currentIndex + index
-        guard nextIndex >= 0 else {
-            guard let lastBuilding = buildings.last else { return }
-            showNextBuilding(building: lastBuilding)
-            return
-        }
-        guard nextIndex < buildings.count else {
-            // go back to first index
-            guard let firstBuilding = buildings.first else { return }
-            showNextBuilding(building: firstBuilding)
-            return
-        }
-        
-        // move to next location
-        showNextBuilding(building: buildings[nextIndex])
     }
 }
