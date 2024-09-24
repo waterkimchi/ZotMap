@@ -17,6 +17,7 @@ struct LocationPreviewView: View {
         HStack(alignment: .top, spacing: 0) {
             VStack(alignment: .leading, spacing: 16) {
                 titleSection
+                
             }
             detailsButton
         }

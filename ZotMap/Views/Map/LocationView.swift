@@ -15,6 +15,11 @@ struct LocationView: View {
     var body: some View {
         ZStack {
             MapView()
+                .onTapGesture {
+                    withAnimation {
+                        vm.showAnnotationSelected = false
+                    }
+                }
                 .zIndex(1)
             VStack(spacing: 0) {
                 if !vm.showLocationList {
@@ -68,7 +73,7 @@ extension LocationView {
             Spacer()
             ZStack {
                 ForEach(vm.buildings) { building in
-                    if vm.mapLocation == building {
+                    if vm.mapLocation == building && vm.showAnnotationSelected {
                         LocationPreviewView(building: building)
                             .shadow(color: Color.black.opacity(0.3), radius: 20)
                             .padding()

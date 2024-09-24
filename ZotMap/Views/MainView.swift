@@ -13,13 +13,13 @@ struct MainView: View {
     @EnvironmentObject private var cvm: CourseViewModel
     
     var body: some View {
-        TabView {
+         TabView {
             LocationView()
                 .tabItem {
                     Image(systemName: "map.fill")
                     Text("Map")
                 }
-            CourseView()
+             CourseView()
                 .tabItem {
                     Image(systemName: "books.vertical.fill")
                     Text("Courses")

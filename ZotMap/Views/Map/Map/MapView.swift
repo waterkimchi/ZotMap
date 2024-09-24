@@ -38,14 +38,13 @@ struct MapView: View {
                         }
                         if vm.mapLocation == building && vm.showAnnotationSelected {
                             VStack {
-                                Button {
-                                    vm.showNextBuilding(building: building)
-                                } label: {
-                                    MapAnnotationView()
-                                }
+                                MapAnnotationView()
+                                    .onTapGesture {
+                                        vm.showNextBuilding(building: building)
+                                    }
                                 Text(building.buildingName)
                                     .font(.custom("Montserrat-Bold", size: 17))
-                                    // Text color based on light/dark mode
+                                // Text color based on light/dark mode
                                     .foregroundStyle(.accentText)
                                     .frame(width: 250)
                             }
@@ -70,3 +69,4 @@ struct MapView: View {
     MapView()
         .environmentObject(LocationViewModel())
 }
+
