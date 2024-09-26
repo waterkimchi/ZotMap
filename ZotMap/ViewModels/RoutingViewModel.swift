@@ -15,4 +15,8 @@ class RoutingViewModel: ObservableObject {
     init() {
         
     }
+    
+    func setLocation(location: CLLocationCoordinate2D) {
+        
+    }
 }
