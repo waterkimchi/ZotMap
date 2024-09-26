@@ -14,13 +14,11 @@ class LocationViewModel: ObservableObject {
     
     let defaultMapSpan = MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003)
     
+    
+    // Map Camera variables
     // Current location on map
-    @Published var mapLocation: Building {
-        didSet {
-            updateMapRegion(location: mapLocation, mapSpan: defaultMapSpan)
-        }
-    }
-    @Published var showAnnotationSelected: Bool = false
+    // Called once loaded: focuses on the UCI campus
+    private var defaultLocation: Building = Building(buildingName: "University of California, Irvine", buildingCategory: "School", latitude: 33.6424, longitude: -117.8417)
     // Curent region on map
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let startSpan = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
@@ -28,34 +26,43 @@ class LocationViewModel: ObservableObject {
     @Published var mapCamera: MapCameraPosition = .automatic
     
     
-    // Locations
+    // Booleans
     @Published var showLocationList: Bool = false
+    @Published var showAnnotationSelected: Bool = false
+    
+    // Current location for mapping
+    @Published var mapLocation: Building {
+        didSet { updateMapRegion(location: mapLocation, mapSpan: defaultMapSpan) }
+    }
     
     // Buildings
-    @Published var buildings: [Building] = []
+    @Published var buildings: [Building] = [] // carries all the building data processed from raw JSON
+    @Published var filteredCategories: [String] = [] // filter for filter menu, default: all selected
     private var cancellables = Set<AnyCancellable>()
     
-    @Published var filteredCategories: [String] = []
-    
-    private var defaultLocation: Building = Building(buildingName: "University of California, Irvine", buildingCategory: "School", latitude: 33.6424, longitude: -117.8417)
-    
+   
+    // Called once app is first loaded
     init() {
-        // locations init
+        // route default location to the current location
         self.mapLocation = defaultLocation
+        // if location is loaded, update map region to first location
         if let firstLocation = buildings.first {
             self.updateMapRegion(location: firstLocation, mapSpan: startSpan)
         }
         
         // buildings init
+        // syncs the data from the json raw file
         BuildingsDataService().$buildings
             .sink { [weak self] (returnCourses) in
                 self?.buildings = returnCourses
             }
             .store(in: &cancellables)
         
+        // initialize filter for buildings
         showAllLocations()
     }
     
+    // convert building coordinates into CLLocationCoordinate2D
     public func buildingCoordinates(building: Building) -> CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude)
     }
