@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551731BE2CA610AE00CB3AFD /* MinimizedAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551731BD2CA610AE00CB3AFD /* MinimizedAnnotationView.swift */; };
 		551BA24C2C8FA867001713B7 /* SearchButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551BA24B2C8FA867001713B7 /* SearchButtonView.swift */; };
 		551BA24E2C8FB240001713B7 /* SlideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551BA24D2C8FB240001713B7 /* SlideMenuView.swift */; };
 		553EF09E2C92B80F00887FD7 /* CoursesDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553EF09D2C92B80F00887FD7 /* CoursesDataService.swift */; };
@@ -28,7 +29,7 @@
 		557D44AE2C94F2CE00E4FF49 /* Buildings.json in Resources */ = {isa = PBXBuildFile; fileRef = 557D44AD2C94F2CE00E4FF49 /* Buildings.json */; };
 		557D44B12C95263000E4FF49 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D44B02C95263000E4FF49 /* Building.swift */; };
 		557D44B52C95279700E4FF49 /* BuildingsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D44B42C95279700E4FF49 /* BuildingsDataService.swift */; };
-		558B47F72C9D358900F0B72A /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B47F62C9D358900F0B72A /* MapAnnotationView.swift */; };
+		558B47F72C9D358900F0B72A /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B47F62C9D358900F0B72A /* AnnotationView.swift */; };
 		558B47FA2C9D442B00F0B72A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B47F92C9D442B00F0B72A /* MapView.swift */; };
 		55A7243F2C92487C00243F2A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 554720282C9245EF007B0B64 /* Montserrat-Regular.ttf */; };
 		55A724412C92489A00243F2A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A724402C92489A00243F2A /* Montserrat-Bold.ttf */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		551731BD2CA610AE00CB3AFD /* MinimizedAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizedAnnotationView.swift; sourceTree = "<group>"; };
 		551BA24B2C8FA867001713B7 /* SearchButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButtonView.swift; sourceTree = "<group>"; };
 		551BA24D2C8FB240001713B7 /* SlideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuView.swift; sourceTree = "<group>"; };
 		553EF09D2C92B80F00887FD7 /* CoursesDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDataService.swift; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		557D44AD2C94F2CE00E4FF49 /* Buildings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Buildings.json; sourceTree = "<group>"; };
 		557D44B02C95263000E4FF49 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		557D44B42C95279700E4FF49 /* BuildingsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsDataService.swift; sourceTree = "<group>"; };
-		558B47F62C9D358900F0B72A /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		558B47F62C9D358900F0B72A /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		558B47F92C9D442B00F0B72A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		55A724402C92489A00243F2A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		55A724422C9248C500243F2A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -119,13 +121,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5514966C2C9BFCEB004669FC /* Map */ = {
+		5514966C2C9BFCEB004669FC /* Map View */ = {
 			isa = PBXGroup;
 			children = (
 				558B47F92C9D442B00F0B72A /* MapView.swift */,
-				558B47F62C9D358900F0B72A /* MapAnnotationView.swift */,
 			);
-			path = Map;
+			path = "Map View";
+			sourceTree = "<group>";
+		};
+		551731BF2CA610FE00CB3AFD /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				558B47F62C9D358900F0B72A /* AnnotationView.swift */,
+				551731BD2CA610AE00CB3AFD /* MinimizedAnnotationView.swift */,
+			);
+			path = Annotation;
 			sourceTree = "<group>";
 		};
 		551BA24F2C8FB6AD001713B7 /* SlideMenu */ = {
@@ -171,9 +181,9 @@
 			children = (
 				553F2BF32C8D683B00483ABA /* ZotMapApp.swift */,
 				553F2C222C8D6AC600483ABA /* Views */,
-				553F2C232C8D6ACD00483ABA /* ViewModels */,
+				553F2C232C8D6ACD00483ABA /* View Models */,
 				553F2C212C8D6AC200483ABA /* Models */,
-				553F2C262C8D6C6400483ABA /* DataServices */,
+				553F2C262C8D6C6400483ABA /* Data Services */,
 				557D44AF2C95260E00E4FF49 /* Raw Data */,
 				553F2BFB2C8D683C00483ABA /* Preview Content */,
 				553EF09C2C92B75F00887FD7 /* Util */,
@@ -229,24 +239,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		553F2C232C8D6ACD00483ABA /* ViewModels */ = {
+		553F2C232C8D6ACD00483ABA /* View Models */ = {
 			isa = PBXGroup;
 			children = (
 				553F2C2B2C8D6D8C00483ABA /* LocationViewModel.swift */,
 				55AD66882CA52B6C001AA9FF /* RoutingViewModel.swift */,
 				55DC8E342C92D0B900FA03DD /* CourseViewModel.swift */,
 			);
-			path = ViewModels;
+			path = "View Models";
 			sourceTree = "<group>";
 		};
-		553F2C262C8D6C6400483ABA /* DataServices */ = {
+		553F2C262C8D6C6400483ABA /* Data Services */ = {
 			isa = PBXGroup;
 			children = (
 				553F2C272C8D6CA100483ABA /* LocationsDataService.swift */,
 				553EF09D2C92B80F00887FD7 /* CoursesDataService.swift */,
 				557D44B42C95279700E4FF49 /* BuildingsDataService.swift */,
 			);
-			path = DataServices;
+			path = "Data Services";
 			sourceTree = "<group>";
 		};
 		557D44AF2C95260E00E4FF49 /* Raw Data */ = {
@@ -260,6 +270,7 @@
 		558B47FB2C9D44D100F0B72A /* HUD */ = {
 			isa = PBXGroup;
 			children = (
+				551731BF2CA610FE00CB3AFD /* Annotation */,
 				553F2C2E2C8E51C200483ABA /* MenuButtonView.swift */,
 				55735EEE2C93D8FC00D2B26A /* LocationPreviewView.swift */,
 			);
@@ -280,7 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				553F2C292C8D6D6800483ABA /* LocationView.swift */,
-				5514966C2C9BFCEB004669FC /* Map */,
+				5514966C2C9BFCEB004669FC /* Map View */,
 				558B47FB2C9D44D100F0B72A /* HUD */,
 				551BA24F2C8FB6AD001713B7 /* SlideMenu */,
 			);
@@ -442,6 +453,7 @@
 				557D44B52C95279700E4FF49 /* BuildingsDataService.swift in Sources */,
 				551BA24C2C8FA867001713B7 /* SearchButtonView.swift in Sources */,
 				551BA24E2C8FB240001713B7 /* SlideMenuView.swift in Sources */,
+				551731BE2CA610AE00CB3AFD /* MinimizedAnnotationView.swift in Sources */,
 				55DC8E352C92D0B900FA03DD /* CourseViewModel.swift in Sources */,
 				553F2BF42C8D683B00483ABA /* ZotMapApp.swift in Sources */,
 				553F2C282C8D6CA100483ABA /* LocationsDataService.swift in Sources */,
@@ -450,7 +462,7 @@
 				558B47FA2C9D442B00F0B72A /* MapView.swift in Sources */,
 				553EF09E2C92B80F00887FD7 /* CoursesDataService.swift in Sources */,
 				55AD66892CA52B6C001AA9FF /* RoutingViewModel.swift in Sources */,
-				558B47F72C9D358900F0B72A /* MapAnnotationView.swift in Sources */,
+				558B47F72C9D358900F0B72A /* AnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

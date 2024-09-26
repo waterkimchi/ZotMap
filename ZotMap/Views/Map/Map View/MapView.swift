@@ -24,21 +24,11 @@ struct MapView: View {
                         Button {
                             vm.showNextBuilding(building: building)
                         } label: {
-                            // small marker
-                            ZStack {
-                                Circle()
-                                    .foregroundStyle(.accentYellow)
-                                    .frame(width: 6, height: 6)
-                                
-                                // invisible circle to enhance touch response on markers
-                                Circle()
-                                    .opacity(0)
-                                    .frame(width: 30, height: 30)
-                            }
+                            MinimizedAnnotationView()
                         }
                         if vm.mapLocation == building && vm.showAnnotationSelected {
                             VStack {
-                                MapAnnotationView()
+                                AnnotationView()
                                     .onTapGesture {
                                         vm.showNextBuilding(building: building)
                                     }
@@ -46,6 +36,7 @@ struct MapView: View {
                                     .font(.custom("Montserrat-Bold", size: 17))
                                 // Text color based on light/dark mode
                                     .foregroundStyle(.accentText)
+                                    .multilineTextAlignment(.center)
                                     .frame(width: 250)
                             }
                         }

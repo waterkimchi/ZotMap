@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MapAnnotationView: View {
+struct AnnotationView: View {
     var body: some View {
         VStack(spacing: 0) {
             Image(systemName: "mappin.circle.fill")
@@ -33,5 +33,5 @@ struct MapAnnotationView: View {
 }
 
 #Preview {
-    MapAnnotationView()
+    AnnotationView()
 }

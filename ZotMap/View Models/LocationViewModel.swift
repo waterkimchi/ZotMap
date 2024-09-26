@@ -25,11 +25,6 @@ class LocationViewModel: ObservableObject {
     // camera position of current map region
     @Published var mapCamera: MapCameraPosition = .automatic
     
-    
-    // Booleans
-    @Published var showLocationList: Bool = false
-    @Published var showAnnotationSelected: Bool = false
-    
     // Current location for mapping
     @Published var mapLocation: Building {
         didSet { updateMapRegion(location: mapLocation, mapSpan: defaultMapSpan) }
@@ -37,10 +32,14 @@ class LocationViewModel: ObservableObject {
     
     // Buildings
     @Published var buildings: [Building] = [] // carries all the building data processed from raw JSON
+    @Published var colors: [Color] = []
     @Published var filteredCategories: [String] = [] // filter for filter menu, default: all selected
     private var cancellables = Set<AnyCancellable>()
     
-   
+    // Booleans
+    @Published var showLocationList: Bool = false
+    @Published var showAnnotationSelected: Bool = false
+    
     // Called once app is first loaded
     init() {
         // route default location to the current location
@@ -82,6 +81,7 @@ class LocationViewModel: ObservableObject {
             showLocationList.toggle()
         }
     }
+
     
     // add categories to the filteredCategories array
     public func filterBuildings(contains: String, showWhenEmpty: Bool) -> [Building] {
