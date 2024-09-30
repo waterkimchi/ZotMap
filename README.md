@@ -39,8 +39,6 @@ git clone "https://github.com/waterkimchi/ZotMap.git"
 
 * **Hyunsu Lim** - *Initial work* - [waterkimchi](https://github.com/waterkimchi)
 
-See also the list of [contributors](https://github.com/waterkimchi/ZotMap/contributors) who participated in this project.
-
 ## Acknowledgments
 
 * This project is an individual project and is not officially created by neither University of California nor UC Irvine. If there are any problems with copyright in the future, this project will be removed.
