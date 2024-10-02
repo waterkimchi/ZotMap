@@ -11,9 +11,15 @@ struct MinimizedAnnotationView: View {
     var body: some View {
         // small marker
         ZStack {
-            Circle()
-                .foregroundStyle(.accentYellow)
-                .frame(width: 6, height: 6)
+            ZStack {
+                Circle()
+                    .foregroundStyle(.accentYellow)
+                    .frame(width: 6, height: 6)
+                Circle()
+                    .foregroundStyle(.accentBlue)
+                    .frame(width: 4, height: 4)
+            }
+            
             
             // invisible circle to enhance touch response on markers
             Circle()

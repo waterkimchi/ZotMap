@@ -81,7 +81,7 @@ class LocationViewModel: ObservableObject {
             showLocationList.toggle()
         }
     }
-
+    
     
     // add categories to the filteredCategories array
     public func filterBuildings(contains: String, showWhenEmpty: Bool) -> [Building] {
@@ -97,6 +97,13 @@ class LocationViewModel: ObservableObject {
                 }
             }
             return searchedBuild
+        }
+    }
+    
+    // change camera based on filtered list
+    public func filteredCategoriesAutomaticMapCamera() {
+        if !filteredCategories.isEmpty {
+            mapCamera = .automatic
         }
     }
     

@@ -53,6 +53,9 @@ struct MapView: View {
         .onAppear {
             manager.requestWhenInUseAuthorization()
         }
+        .onChange(of: vm.filteredCategories) {
+            vm.filteredCategoriesAutomaticMapCamera()
+        }
     }
 }
 
