@@ -14,8 +14,6 @@ Not tested.
 
 Link will be updated for the iOS app on App Store.
 
-App Store link: TBD
-
 Development installing:
 
 1. download latest Xcode and make sure Xcode tools is installed.
