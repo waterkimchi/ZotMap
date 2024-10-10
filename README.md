@@ -6,10 +6,6 @@ iOS native app to view and access the University of California, Irvine campus ma
 
 This is an ongoing project and is not yet finalized for release. Please check back later for any updates.
 
-### Prerequisites
-
-Not tested.
-
 ### Installing
 
 Link will be updated for the iOS app on App Store.
