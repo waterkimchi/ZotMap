@@ -19,7 +19,7 @@ struct LocationPreviewView: View {
                 titleSection
                 
             }
-            detailsButton
+            directionsButton
         }
         .padding(20)
         .background(
@@ -56,13 +56,13 @@ extension LocationPreviewView {
         }
     }
     
-    private var detailsButton: some View {
+    private var directionsButton: some View {
         Button {
             
         } label: {
-            Text("Details")
+            Text("Directions")
                 .font(.custom("Montserrat-Bold", size: 16))
-                .frame(width: 80, height: 35)
+                .frame(width: 90, height: 35)
         }
         .background(.accentYellow)
         .foregroundStyle(.accentBlue)
