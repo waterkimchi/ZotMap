@@ -2,9 +2,7 @@
 
 iOS native app to view and access the University of California, Irvine campus map on your phone. 
 
-## Getting Started
-
-This is an ongoing project and is not yet finalized for release. Please check back later for any updates.
+**This is an ongoing project and is not yet finalized for release. Please check back later for any updates.**
 
 ### Installing
 
